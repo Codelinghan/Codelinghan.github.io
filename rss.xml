@@ -10,8 +10,46 @@
         </author>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Tue, 11 Jan 2022 20:34:19 +0800</pubDate>
-        <lastBuildDate>Tue, 11 Jan 2022 20:34:19 +0800</lastBuildDate>
+        <pubDate>Sat, 22 Jan 2022 22:57:13 +0800</pubDate>
+        <lastBuildDate>Sat, 22 Jan 2022 22:57:13 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">http://example.com/2022/01/22/VS%E6%8A%A5%E9%94%99%E6%80%BB%E7%BB%93/</guid>
+            <title>VS学习过程中的报错、警告记录</title>
+            <link>http://example.com/2022/01/22/VS%E6%8A%A5%E9%94%99%E6%80%BB%E7%BB%93/</link>
+            <pubDate>Sat, 22 Jan 2022 22:57:13 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;编译警告msb8028&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#编译警告msb8028&#34;&gt;#&lt;/a&gt; 编译警告 MSB8028&lt;/h1&gt;
+&lt;p&gt;&amp;lt;p&amp;gt; 中间目录 (shared-intermediate-path) 包含从另一个项目 (intermediate-path) 共享的文件 。 这可能导致错误的清理和重新生成行为。&amp;lt;br&amp;gt;&lt;/p&gt;
+&lt;p&gt;VS 中，一个解决方案中有多个子项目时，出现 MSB8028 这个显示警告。&amp;lt;/p&amp;gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&#34;解决方法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#解决方法&#34;&gt;#&lt;/a&gt; &lt;strong&gt;解决方法&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&amp;lt;u1&amp;gt;&lt;br /&gt;
+&amp;lt;li&amp;gt; 打开这个解决方案文件夹&lt;br /&gt;
+ &amp;lt;li&amp;gt; 找到正在启用的子项目的项目文件夹并打开&lt;br /&gt;
+ &amp;lt;li&amp;gt; 打开此项目文件夹，手动删除 &amp;quot;Debug&amp;quot; 文件夹 (即：解决方案 \ 子项目 \Debug)&lt;br /&gt;
+&amp;lt;li&amp;gt; 再重新生成 Debug 文件夹。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;lt;br&amp;gt;&lt;/p&gt;
+&lt;h1 id=&#34;编译警告c6031&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#编译警告c6031&#34;&gt;#&lt;/a&gt; 编译警告 C6031&lt;/h1&gt;
+&lt;p&gt;&amp;lt;p&amp;gt; 已忽略返回值： 调用的函数 可能会返回意外值 &amp;lt; br&amp;gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&#34;解决方法-3种&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#解决方法-3种&#34;&gt;#&lt;/a&gt; &lt;strong&gt;解决方法&lt;/strong&gt; （3 种）&lt;/h2&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;1在文件顶部添加代码&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1在文件顶部添加代码&#34;&gt;#&lt;/a&gt; 1. 在文件顶部添加代码&lt;/h4&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;token directive keyword&#34;&gt;pragma&lt;/span&gt; &lt;span class=&#34;token expression&#34;&gt;&lt;span class=&#34;token function&#34;&gt;warning&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;disable&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;6031&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;或者&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;token directive keyword&#34;&gt;pragma&lt;/span&gt; &lt;span class=&#34;token expression&#34;&gt;&lt;span class=&#34;token function&#34;&gt;warning&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;disable&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;4996&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;作者本人添加了 “6031” 这行代码成功消除此警告。&lt;/p&gt;
+&lt;h4 id=&#34;2右键单击工程文件源代码main1c处&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2右键单击工程文件源代码main1c处&#34;&gt;#&lt;/a&gt; 2. 右键单击工程文件源代码 (main1.c) 处&lt;/h4&gt;
+&lt;p&gt;&amp;lt;p&amp;gt; 打开属性栏，然后 &amp;lt; strong &amp;gt; 配置属性 &amp;lt;/strong&amp;gt;&amp;gt;&amp;lt;strong&amp;gt;C/C++&amp;lt;/strong&amp;gt;&amp;gt;&amp;lt;strong &amp;gt; 所有选项 &amp;lt;/strong&amp;gt;, 将 &amp;lt; strong&amp;gt;SDL 检查 &amp;lt;/strong &amp;gt; 改为 &amp;lt; strong &amp;gt; 否 &amp;lt;/strong&amp;gt;, 然后点击保存。（如下图）&lt;/p&gt;
+&lt;h4 id=&#34;3将scanf改为scanf_s&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3将scanf改为scanf_s&#34;&gt;#&lt;/a&gt; 3. 将 scanf 改为 scanf_s&lt;/h4&gt;
+&lt;p&gt;&amp;lt;p&amp;gt; 注意：该方法不安全！&amp;lt;/p&amp;gt;&lt;/p&gt;
+&lt;h1 id=&#34;编译警告c4996&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#编译警告c4996&#34;&gt;#&lt;/a&gt; 编译警告 C4996&lt;/h1&gt;
+&lt;p&gt;&amp;lt;p&amp;gt;VS 产生如下图错误：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&#34;解决方法-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#解决方法-2&#34;&gt;#&lt;/a&gt; &lt;strong&gt;解决方法&lt;/strong&gt;&lt;/h2&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在该文件最顶部（即：第一行）添加如下代码：&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;token directive keyword&#34;&gt;define&lt;/span&gt; &lt;span class=&#34;token macro-name&#34;&gt;_CRT_SECURE_NO_WARNINGS&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;例如：&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;token directive keyword&#34;&gt;define&lt;/span&gt; &lt;span class=&#34;token macro-name&#34;&gt;_CRT_SECURE_NO_WARNINGS&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;token directive keyword&#34;&gt;pragma&lt;/span&gt; &lt;span class=&#34;token expression&#34;&gt;&lt;span class=&#34;token function&#34;&gt;warning&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;disable&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;6031&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;token directive keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&amp;lt;stdio.h&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; a &lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token function&#34;&gt;scanf&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;%d&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt;a&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token function&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;a=%d\n&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;a&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://example.com/2022/01/11/hexoBlog%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/</guid>
             <title>Hexo报错问题</title>
