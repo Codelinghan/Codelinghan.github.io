@@ -35,16 +35,16 @@
         <id>http://example.com/2022/01/10/%E6%90%AD%E5%BB%BAhexoBlog/</id>
         <title>搭建Hexo的基本工具</title>
         <link rel="alternate" href="http://example.com/2022/01/10/%E6%90%AD%E5%BB%BAhexoBlog/"/>
-        <content type="html">&lt;h2 id=&#34;一-下载git官网下载&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-下载git官网下载&#34;&gt;#&lt;/a&gt; 一、下载 Git: 官网下载&lt;/h2&gt;
+        <content type="html">&lt;h1 id=&#34;一-下载git官网下载&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-下载git官网下载&#34;&gt;#&lt;/a&gt; 一、下载 Git: 官网下载&lt;/h1&gt;
 &lt;pre&gt;&lt;code&gt;    傻瓜式安装，一路跟着推荐安装好，或者从网上搜索安装步骤。
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;二-安装nodejs官网下载&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#二-安装nodejs官网下载&#34;&gt;#&lt;/a&gt; 二、安装 node.js: 官网下载&lt;/h2&gt;
-&lt;h2 id=&#34;三-根据网上教程配置git和nodejs的环境变量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#三-根据网上教程配置git和nodejs的环境变量&#34;&gt;#&lt;/a&gt; 三、根据网上教程配置 Git 和 node.js 的环境变量&lt;/h2&gt;
-&lt;h2 id=&#34;四-运行cmd&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#四-运行cmd&#34;&gt;#&lt;/a&gt; 四、 运行 cmd&lt;/h2&gt;
-&lt;p&gt;1.(分别输入，下列每输一行敲一个回车)(注意空格)&lt;/p&gt;
+&lt;h1 id=&#34;二-安装nodejs官网下载&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#二-安装nodejs官网下载&#34;&gt;#&lt;/a&gt; 二、安装 node.js: 官网下载&lt;/h1&gt;
+&lt;h1 id=&#34;三-根据网上教程配置git和nodejs的环境变量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#三-根据网上教程配置git和nodejs的环境变量&#34;&gt;#&lt;/a&gt; 三、根据网上教程配置 Git 和 node.js 的环境变量&lt;/h1&gt;
+&lt;h1 id=&#34;四-运行cmd&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#四-运行cmd&#34;&gt;#&lt;/a&gt; 四、 运行 cmd&lt;/h1&gt;
+&lt;h2 id=&#34;1分别输入下列每输一行敲一个回车注意空格&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1分别输入下列每输一行敲一个回车注意空格&#34;&gt;#&lt;/a&gt; 1.(分别输入，下列每输一行敲一个回车)(注意空格)&lt;/h2&gt;
 &lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;node &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;v&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npm &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;v&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;git &lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;version&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;得到相对应的版本信息（如图）:&lt;br /&gt;
 &amp;lt;div align=&amp;quot;center&amp;quot;&amp;gt;&lt;br /&gt;
-&amp;lt;img src=&amp;quot;./assets/3.png&amp;quot; width=&amp;quot;70%&amp;quot;&amp;gt;&lt;br /&gt;
+&amp;lt;img src=&amp;quot;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL0NvZGVsaW5naGFuL2ltYWdlLWhvc3RpbmdAbWFzdGVyL2ltZ3BhdGgvMS42YzNibjF1c2VtdzAud2VicA==&#34;&gt;https://cdn.jsdelivr.net/gh/Codelinghan/image-hosting@master/imgpath/1.6c3bn1usemw0.webp&lt;/span&gt;&amp;quot; width=&amp;quot;70%&amp;quot;&amp;gt;&lt;br /&gt;
 &amp;lt;/div&amp;gt;&lt;/p&gt;
 &lt;p&gt;如果都可以成功运行出现版本信息证明安装成功。&lt;/p&gt;
 &lt;p&gt;2. 安装 Hexo&lt;br /&gt;
