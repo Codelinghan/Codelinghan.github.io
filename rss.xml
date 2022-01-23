@@ -16,6 +16,8 @@
             <guid isPermalink="true">http://example.com/computer-science/operating-system/%E7%AC%AC%E4%B8%80%E7%AB%A0/</guid>
             <title></title>
             <link>http://example.com/computer-science/operating-system/%E7%AC%AC%E4%B8%80%E7%AB%A0/</link>
+            <category term="计算机科学" scheme="http://example.com/categories/computer-science/" />
+            <category term="操作系统" scheme="http://example.com/categories/computer-science/operating-system/" />
             <pubDate>Sun, 23 Jan 2022 16:34:52 +0800</pubDate>
             <description><![CDATA[  ]]></description>
         </item>
@@ -23,6 +25,8 @@
             <guid isPermalink="true">http://example.com/computer-science/computer-organization/%E7%AC%AC%E4%B8%80%E7%AB%A0/</guid>
             <title></title>
             <link>http://example.com/computer-science/computer-organization/%E7%AC%AC%E4%B8%80%E7%AB%A0/</link>
+            <category term="计算机科学" scheme="http://example.com/categories/computer-science/" />
+            <category term="计算机组成原理" scheme="http://example.com/categories/computer-science/computer-organization/" />
             <pubDate>Sun, 23 Jan 2022 16:34:27 +0800</pubDate>
             <description><![CDATA[  ]]></description>
         </item>
@@ -30,20 +34,26 @@
             <guid isPermalink="true">http://example.com/computer-science/computer-networking/%E7%AC%AC%E4%B8%80%E7%AB%A0/</guid>
             <title></title>
             <link>http://example.com/computer-science/computer-networking/%E7%AC%AC%E4%B8%80%E7%AB%A0/</link>
+            <category term="计算机科学" scheme="http://example.com/categories/computer-science/" />
+            <category term="计算机网络" scheme="http://example.com/categories/computer-science/computer-networking/" />
             <pubDate>Sun, 23 Jan 2022 16:34:14 +0800</pubDate>
             <description><![CDATA[  ]]></description>
         </item>
         <item>
             <guid isPermalink="true">http://example.com/course/English/%E4%BD%9C%E6%96%87/</guid>
-            <title></title>
+            <title>作文</title>
             <link>http://example.com/course/English/%E4%BD%9C%E6%96%87/</link>
+            <category term="外语" scheme="http://example.com/categories/course/" />
+            <category term="English" scheme="http://example.com/categories/course/English/" />
             <pubDate>Sun, 23 Jan 2022 16:31:34 +0800</pubDate>
             <description><![CDATA[  ]]></description>
         </item>
         <item>
             <guid isPermalink="true">http://example.com/course/English/%E8%AF%AD%E6%B3%95/</guid>
-            <title></title>
+            <title>语法</title>
             <link>http://example.com/course/English/%E8%AF%AD%E6%B3%95/</link>
+            <category term="外语" scheme="http://example.com/categories/course/" />
+            <category term="English" scheme="http://example.com/categories/course/English/" />
             <pubDate>Sun, 23 Jan 2022 16:31:20 +0800</pubDate>
             <description><![CDATA[  ]]></description>
         </item>
@@ -51,6 +61,8 @@
             <guid isPermalink="true">http://example.com/computer-science/Date-structure/%E7%AC%AC%E4%B8%80%E7%AB%A0/</guid>
             <title></title>
             <link>http://example.com/computer-science/Date-structure/%E7%AC%AC%E4%B8%80%E7%AB%A0/</link>
+            <category term="计算机科学" scheme="http://example.com/categories/computer-science/" />
+            <category term="数据结构" scheme="http://example.com/categories/computer-science/Date-structure/" />
             <pubDate>Sun, 23 Jan 2022 16:30:41 +0800</pubDate>
             <description><![CDATA[  ]]></description>
         </item>
@@ -58,6 +70,8 @@
             <guid isPermalink="true">http://example.com/computer-language/C/%E7%AC%AC%E4%B8%80%E7%AB%A0/</guid>
             <title></title>
             <link>http://example.com/computer-language/C/%E7%AC%AC%E4%B8%80%E7%AB%A0/</link>
+            <category term="计算机语言" scheme="http://example.com/categories/computer-language/" />
+            <category term="C" scheme="http://example.com/categories/computer-language/C/" />
             <pubDate>Sun, 23 Jan 2022 16:29:45 +0800</pubDate>
             <description><![CDATA[  ]]></description>
         </item>
@@ -72,6 +86,7 @@
             <guid isPermalink="true">http://example.com/notes/VS%E6%8A%A5%E9%94%99%E6%80%BB%E7%BB%93/</guid>
             <title>VS学习过程中的报错、警告记录</title>
             <link>http://example.com/notes/VS%E6%8A%A5%E9%94%99%E6%80%BB%E7%BB%93/</link>
+            <category term="笔记" scheme="http://example.com/categories/notes/" />
             <pubDate>Sat, 22 Jan 2022 22:57:13 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;编译警告msb8028&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#编译警告msb8028&#34;&gt;#&lt;/a&gt; 编译警告 MSB8028&lt;/h1&gt;
 &lt;p&gt;中间目录 (shared-intermediate-path) 包含从另一个项目 (intermediate-path) 共享的文件 。 这可能导致错误的清理和重新生成行为。&lt;/p&gt;
@@ -110,6 +125,7 @@
             <guid isPermalink="true">http://example.com/notes/hexoBlog%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/</guid>
             <title>Hexo报错问题</title>
             <link>http://example.com/notes/hexoBlog%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/</link>
+            <category term="笔记" scheme="http://example.com/categories/notes/" />
             <pubDate>Tue, 11 Jan 2022 20:34:19 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;一-highlightjs9版本已停用升级成最新版本&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-highlightjs9版本已停用升级成最新版本&#34;&gt;#&lt;/a&gt; 一、highlight.js@9 版本已停用，升级成最新版本&lt;/h1&gt;
 &lt;h2 id=&#34;1点进blog文件夹右键git-bush-here执行以下命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1点进blog文件夹右键git-bush-here执行以下命令&#34;&gt;#&lt;/a&gt; 1. 点进 Blog 文件夹，右键【Git Bush Here】，执行以下命令：&lt;/h2&gt;
