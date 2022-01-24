@@ -37,18 +37,18 @@
         <updated>2022-01-23T08:34:14.433Z</updated>
     </entry>
     <entry>
-        <id>https://codelinghan.github.io/2022/course/English/%E4%BD%9C%E6%96%87/</id>
+        <id>https://codelinghan.github.io/2022/course/English/02.%E4%BD%9C%E6%96%87/</id>
         <title>作文</title>
-        <link rel="alternate" href="https://codelinghan.github.io/2022/course/English/%E4%BD%9C%E6%96%87/"/>
+        <link rel="alternate" href="https://codelinghan.github.io/2022/course/English/02.%E4%BD%9C%E6%96%87/"/>
         <content type="html"></content>
         <category term="外语" scheme="https://codelinghan.github.io/categories/course/" />
         <category term="English" scheme="https://codelinghan.github.io/categories/course/English/" />
         <updated>2022-01-23T08:31:34.488Z</updated>
     </entry>
     <entry>
-        <id>https://codelinghan.github.io/2022/course/English/%E8%AF%AD%E6%B3%95/</id>
+        <id>https://codelinghan.github.io/2022/course/English/01.%E8%AF%AD%E6%B3%95/</id>
         <title>语法</title>
-        <link rel="alternate" href="https://codelinghan.github.io/2022/course/English/%E8%AF%AD%E6%B3%95/"/>
+        <link rel="alternate" href="https://codelinghan.github.io/2022/course/English/01.%E8%AF%AD%E6%B3%95/"/>
         <content type="html"></content>
         <category term="外语" scheme="https://codelinghan.github.io/categories/course/" />
         <category term="English" scheme="https://codelinghan.github.io/categories/course/English/" />
@@ -73,17 +73,18 @@
         <updated>2022-01-23T08:29:45.983Z</updated>
     </entry>
     <entry>
-        <id>https://codelinghan.github.io/2022/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</id>
+        <id>https://codelinghan.github.io/2022/life/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</id>
         <title>Life Records</title>
-        <link rel="alternate" href="https://codelinghan.github.io/2022/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/"/>
+        <link rel="alternate" href="https://codelinghan.github.io/2022/life/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/"/>
         <content type="html"></content>
+        <category term="Every-day Life" scheme="https://codelinghan.github.io/categories/life/" />
         <category term="生活" scheme="https://codelinghan.github.io/tags/%E7%94%9F%E6%B4%BB/" />
         <updated>2022-01-23T05:36:54.123Z</updated>
     </entry>
     <entry>
-        <id>https://codelinghan.github.io/2022/notes/VS%E6%8A%A5%E9%94%99%E6%80%BB%E7%BB%93/</id>
+        <id>https://codelinghan.github.io/2022/notes/01.VS%E6%8A%A5%E9%94%99%E6%80%BB%E7%BB%93/</id>
         <title>VS学习过程中的报错、警告记录</title>
-        <link rel="alternate" href="https://codelinghan.github.io/2022/notes/VS%E6%8A%A5%E9%94%99%E6%80%BB%E7%BB%93/"/>
+        <link rel="alternate" href="https://codelinghan.github.io/2022/notes/01.VS%E6%8A%A5%E9%94%99%E6%80%BB%E7%BB%93/"/>
         <content type="html">&lt;h1 id=&#34;编译警告msb8028&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#编译警告msb8028&#34;&gt;#&lt;/a&gt; 编译警告 MSB8028&lt;/h1&gt;
 &lt;p&gt;中间目录 (shared-intermediate-path) 包含从另一个项目 (intermediate-path) 共享的文件 。 这可能导致错误的清理和重新生成行为。&lt;/p&gt;
 &lt;p&gt;VS 中，一个解决方案中有多个子项目时，出现 MSB8028 这个显示警告。&lt;/p&gt;
@@ -121,9 +122,9 @@
         <updated>2022-01-22T14:57:13.981Z</updated>
     </entry>
     <entry>
-        <id>https://codelinghan.github.io/2022/notes/hexoBlog%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/</id>
+        <id>https://codelinghan.github.io/2022/Hexo/03.Hexo%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/</id>
         <title>Hexo报错问题</title>
-        <link rel="alternate" href="https://codelinghan.github.io/2022/notes/hexoBlog%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/"/>
+        <link rel="alternate" href="https://codelinghan.github.io/2022/Hexo/03.Hexo%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/"/>
         <content type="html">&lt;h1 id=&#34;一-highlightjs9版本已停用升级成最新版本&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-highlightjs9版本已停用升级成最新版本&#34;&gt;#&lt;/a&gt; 一、highlight.js@9 版本已停用，升级成最新版本&lt;/h1&gt;
 &lt;h2 id=&#34;1点进blog文件夹右键git-bush-here执行以下命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1点进blog文件夹右键git-bush-here执行以下命令&#34;&gt;#&lt;/a&gt; 1. 点进 Blog 文件夹，右键【Git Bush Here】，执行以下命令：&lt;/h2&gt;
 &lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npm ls highlight&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;js&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;查看 highlight.js 的位置。&lt;/p&gt;
@@ -136,14 +137,14 @@
 &lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/Codelinghan/image-hosting@master/imgpath/9.29a63m16yzvo.jpg&#34; alt=&#34;9&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;命令执行如图所示就代表成功升级。&lt;/p&gt;
 </content>
-        <category term="笔记" scheme="https://codelinghan.github.io/categories/notes/" />
+        <category term="Hexo" scheme="https://codelinghan.github.io/categories/Hexo/" />
         <category term="Hexo" scheme="https://codelinghan.github.io/tags/Hexo/" />
         <updated>2022-01-11T12:34:19.653Z</updated>
     </entry>
     <entry>
-        <id>https://codelinghan.github.io/2022/%E6%90%AD%E5%BB%BAhexoBlog/</id>
-        <title>搭建Hexo的基本工具</title>
-        <link rel="alternate" href="https://codelinghan.github.io/2022/%E6%90%AD%E5%BB%BAhexoBlog/"/>
+        <id>https://codelinghan.github.io/2022/Hexo/01.%E6%90%AD%E5%BB%BAHexo/</id>
+        <title>Hexo+shoka+GitHub搭建相关问题</title>
+        <link rel="alternate" href="https://codelinghan.github.io/2022/Hexo/01.%E6%90%AD%E5%BB%BAHexo/"/>
         <content type="html">&lt;h1 id=&#34;一-下载git官网下载&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-下载git官网下载&#34;&gt;#&lt;/a&gt; 一、下载 Git: 官网下载&lt;/h1&gt;
 &lt;pre&gt;&lt;code&gt;    傻瓜式安装，一路跟着推荐安装好，或者从网上搜索安装步骤。
 &lt;/code&gt;&lt;/pre&gt;
@@ -225,13 +226,14 @@
  打开 Git 命令页面，执行 git 命令脚本：修改设置，解除 ssl 验证&lt;/p&gt;
 &lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;git config &lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;global http&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;sslVerify &lt;span class=&#34;token string&#34;&gt;&#34;false&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/Codelinghan/image-hosting@master/imgpath/7.4v49t67vv6s0.jpg&#34; alt=&#34;7&#34; /&gt;&lt;/p&gt;
 </content>
+        <category term="Hexo" scheme="https://codelinghan.github.io/categories/Hexo/" />
         <category term="Hexo" scheme="https://codelinghan.github.io/tags/Hexo/" />
         <updated>2022-01-10T11:34:36.849Z</updated>
     </entry>
     <entry>
-        <id>https://codelinghan.github.io/2022/ssh%20key%20%E8%AE%BE%E7%BD%AE/</id>
+        <id>https://codelinghan.github.io/2022/Hexo/04.ssh%20key%20%E8%AE%BE%E7%BD%AE/</id>
         <title>ssh key 设置</title>
-        <link rel="alternate" href="https://codelinghan.github.io/2022/ssh%20key%20%E8%AE%BE%E7%BD%AE/"/>
+        <link rel="alternate" href="https://codelinghan.github.io/2022/Hexo/04.ssh%20key%20%E8%AE%BE%E7%BD%AE/"/>
         <content type="html">&lt;p&gt;在 gitee、github、本地 gitlab 上同时添加 ssh key&lt;/p&gt;
 &lt;h1 id=&#34;一-打开-ssh文件夹&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-打开-ssh文件夹&#34;&gt;#&lt;/a&gt; 一、打开 .ssh 文件夹&lt;/h1&gt;
 &lt;blockquote&gt;
@@ -259,6 +261,8 @@
 &lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ ssh &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;T git@&lt;span class=&#34;token number&#34;&gt;192.168&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1.111&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;输出以下内容就表示连接成功：&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/Codelinghan/image-hosting@master/imgpath/2.59rjp8lrpy00.jpg&#34; alt=&#34;2&#34; /&gt;&lt;/p&gt;
 </content>
+        <category term="Hexo" scheme="https://codelinghan.github.io/categories/Hexo/" />
+        <category term=".ssh key" scheme="https://codelinghan.github.io/tags/ssh-key/" />
         <updated>2022-01-01T08:50:02.703Z</updated>
     </entry>
 </feed>

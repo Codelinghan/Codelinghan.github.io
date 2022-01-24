@@ -40,18 +40,18 @@
             <description><![CDATA[  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codelinghan.github.io/2022/course/English/%E4%BD%9C%E6%96%87/</guid>
+            <guid isPermalink="true">https://codelinghan.github.io/2022/course/English/02.%E4%BD%9C%E6%96%87/</guid>
             <title>作文</title>
-            <link>https://codelinghan.github.io/2022/course/English/%E4%BD%9C%E6%96%87/</link>
+            <link>https://codelinghan.github.io/2022/course/English/02.%E4%BD%9C%E6%96%87/</link>
             <category term="外语" scheme="https://codelinghan.github.io/categories/course/" />
             <category term="English" scheme="https://codelinghan.github.io/categories/course/English/" />
             <pubDate>Sun, 23 Jan 2022 16:31:34 +0800</pubDate>
             <description><![CDATA[  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codelinghan.github.io/2022/course/English/%E8%AF%AD%E6%B3%95/</guid>
+            <guid isPermalink="true">https://codelinghan.github.io/2022/course/English/01.%E8%AF%AD%E6%B3%95/</guid>
             <title>语法</title>
-            <link>https://codelinghan.github.io/2022/course/English/%E8%AF%AD%E6%B3%95/</link>
+            <link>https://codelinghan.github.io/2022/course/English/01.%E8%AF%AD%E6%B3%95/</link>
             <category term="外语" scheme="https://codelinghan.github.io/categories/course/" />
             <category term="English" scheme="https://codelinghan.github.io/categories/course/English/" />
             <pubDate>Sun, 23 Jan 2022 16:31:20 +0800</pubDate>
@@ -76,17 +76,18 @@
             <description><![CDATA[  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codelinghan.github.io/2022/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+            <guid isPermalink="true">https://codelinghan.github.io/2022/life/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
             <title>Life Records</title>
-            <link>https://codelinghan.github.io/2022/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+            <link>https://codelinghan.github.io/2022/life/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+            <category term="Every-day Life" scheme="https://codelinghan.github.io/categories/life/" />
             <category term="生活" scheme="https://codelinghan.github.io/tags/%E7%94%9F%E6%B4%BB/" />
             <pubDate>Sun, 23 Jan 2022 13:36:54 +0800</pubDate>
             <description><![CDATA[  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codelinghan.github.io/2022/notes/VS%E6%8A%A5%E9%94%99%E6%80%BB%E7%BB%93/</guid>
+            <guid isPermalink="true">https://codelinghan.github.io/2022/notes/01.VS%E6%8A%A5%E9%94%99%E6%80%BB%E7%BB%93/</guid>
             <title>VS学习过程中的报错、警告记录</title>
-            <link>https://codelinghan.github.io/2022/notes/VS%E6%8A%A5%E9%94%99%E6%80%BB%E7%BB%93/</link>
+            <link>https://codelinghan.github.io/2022/notes/01.VS%E6%8A%A5%E9%94%99%E6%80%BB%E7%BB%93/</link>
             <category term="笔记" scheme="https://codelinghan.github.io/categories/notes/" />
             <category term="C语言报错" scheme="https://codelinghan.github.io/tags/C%E8%AF%AD%E8%A8%80%E6%8A%A5%E9%94%99/" />
             <pubDate>Sat, 22 Jan 2022 22:57:13 +0800</pubDate>
@@ -124,10 +125,10 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codelinghan.github.io/2022/notes/hexoBlog%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/</guid>
+            <guid isPermalink="true">https://codelinghan.github.io/2022/Hexo/03.Hexo%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/</guid>
             <title>Hexo报错问题</title>
-            <link>https://codelinghan.github.io/2022/notes/hexoBlog%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/</link>
-            <category term="笔记" scheme="https://codelinghan.github.io/categories/notes/" />
+            <link>https://codelinghan.github.io/2022/Hexo/03.Hexo%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/</link>
+            <category term="Hexo" scheme="https://codelinghan.github.io/categories/Hexo/" />
             <category term="Hexo" scheme="https://codelinghan.github.io/tags/Hexo/" />
             <pubDate>Tue, 11 Jan 2022 20:34:19 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;一-highlightjs9版本已停用升级成最新版本&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-highlightjs9版本已停用升级成最新版本&#34;&gt;#&lt;/a&gt; 一、highlight.js@9 版本已停用，升级成最新版本&lt;/h1&gt;
@@ -144,9 +145,10 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codelinghan.github.io/2022/%E6%90%AD%E5%BB%BAhexoBlog/</guid>
-            <title>搭建Hexo的基本工具</title>
-            <link>https://codelinghan.github.io/2022/%E6%90%AD%E5%BB%BAhexoBlog/</link>
+            <guid isPermalink="true">https://codelinghan.github.io/2022/Hexo/01.%E6%90%AD%E5%BB%BAHexo/</guid>
+            <title>Hexo+shoka+GitHub搭建相关问题</title>
+            <link>https://codelinghan.github.io/2022/Hexo/01.%E6%90%AD%E5%BB%BAHexo/</link>
+            <category term="Hexo" scheme="https://codelinghan.github.io/categories/Hexo/" />
             <category term="Hexo" scheme="https://codelinghan.github.io/tags/Hexo/" />
             <pubDate>Mon, 10 Jan 2022 19:34:36 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;一-下载git官网下载&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-下载git官网下载&#34;&gt;#&lt;/a&gt; 一、下载 Git: 官网下载&lt;/h1&gt;
@@ -232,9 +234,11 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codelinghan.github.io/2022/ssh%20key%20%E8%AE%BE%E7%BD%AE/</guid>
+            <guid isPermalink="true">https://codelinghan.github.io/2022/Hexo/04.ssh%20key%20%E8%AE%BE%E7%BD%AE/</guid>
             <title>ssh key 设置</title>
-            <link>https://codelinghan.github.io/2022/ssh%20key%20%E8%AE%BE%E7%BD%AE/</link>
+            <link>https://codelinghan.github.io/2022/Hexo/04.ssh%20key%20%E8%AE%BE%E7%BD%AE/</link>
+            <category term="Hexo" scheme="https://codelinghan.github.io/categories/Hexo/" />
+            <category term=".ssh key" scheme="https://codelinghan.github.io/tags/ssh-key/" />
             <pubDate>Sat, 01 Jan 2022 16:50:02 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;在 gitee、github、本地 gitlab 上同时添加 ssh key&lt;/p&gt;
 &lt;h1 id=&#34;一-打开-ssh文件夹&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-打开-ssh文件夹&#34;&gt;#&lt;/a&gt; 一、打开 .ssh 文件夹&lt;/h1&gt;
