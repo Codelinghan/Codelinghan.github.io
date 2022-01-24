@@ -1,89 +1,89 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://example.com</id>
+    <id>https://codelinghan.github.io</id>
     <title>凌寒</title>
     <subtitle></subtitle>
-    <icon>http://example.com/images/favicon.ico</icon>
-    <link href="http://example.com" />
+    <icon>https://codelinghan.github.io/images/favicon.ico</icon>
+    <link href="https://codelinghan.github.io" />
     <author>
       <name>FreeDom</name>
     </author>
     <updated>2022-01-23T08:34:52.738Z</updated>
     <entry>
-        <id>http://example.com/computer-science/operating-system/%E7%AC%AC%E4%B8%80%E7%AB%A0/</id>
+        <id>https://codelinghan.github.io/2022/computer-science/operating-system/%E7%AC%AC%E4%B8%80%E7%AB%A0/</id>
         <title></title>
-        <link rel="alternate" href="http://example.com/computer-science/operating-system/%E7%AC%AC%E4%B8%80%E7%AB%A0/"/>
+        <link rel="alternate" href="https://codelinghan.github.io/2022/computer-science/operating-system/%E7%AC%AC%E4%B8%80%E7%AB%A0/"/>
         <content type="html"></content>
-        <category term="计算机科学" scheme="http://example.com/categories/computer-science/" />
-        <category term="操作系统" scheme="http://example.com/categories/computer-science/operating-system/" />
+        <category term="计算机科学" scheme="https://codelinghan.github.io/categories/computer-science/" />
+        <category term="操作系统" scheme="https://codelinghan.github.io/categories/computer-science/operating-system/" />
         <updated>2022-01-23T08:34:52.738Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/computer-science/computer-organization/%E7%AC%AC%E4%B8%80%E7%AB%A0/</id>
+        <id>https://codelinghan.github.io/2022/computer-science/computer-organization/%E7%AC%AC%E4%B8%80%E7%AB%A0/</id>
         <title></title>
-        <link rel="alternate" href="http://example.com/computer-science/computer-organization/%E7%AC%AC%E4%B8%80%E7%AB%A0/"/>
+        <link rel="alternate" href="https://codelinghan.github.io/2022/computer-science/computer-organization/%E7%AC%AC%E4%B8%80%E7%AB%A0/"/>
         <content type="html"></content>
-        <category term="计算机科学" scheme="http://example.com/categories/computer-science/" />
-        <category term="计算机组成原理" scheme="http://example.com/categories/computer-science/computer-organization/" />
+        <category term="计算机科学" scheme="https://codelinghan.github.io/categories/computer-science/" />
+        <category term="计算机组成原理" scheme="https://codelinghan.github.io/categories/computer-science/computer-organization/" />
         <updated>2022-01-23T08:34:27.294Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/computer-science/computer-networking/%E7%AC%AC%E4%B8%80%E7%AB%A0/</id>
+        <id>https://codelinghan.github.io/2022/computer-science/computer-networking/%E7%AC%AC%E4%B8%80%E7%AB%A0/</id>
         <title></title>
-        <link rel="alternate" href="http://example.com/computer-science/computer-networking/%E7%AC%AC%E4%B8%80%E7%AB%A0/"/>
+        <link rel="alternate" href="https://codelinghan.github.io/2022/computer-science/computer-networking/%E7%AC%AC%E4%B8%80%E7%AB%A0/"/>
         <content type="html"></content>
-        <category term="计算机科学" scheme="http://example.com/categories/computer-science/" />
-        <category term="计算机网络" scheme="http://example.com/categories/computer-science/computer-networking/" />
+        <category term="计算机科学" scheme="https://codelinghan.github.io/categories/computer-science/" />
+        <category term="计算机网络" scheme="https://codelinghan.github.io/categories/computer-science/computer-networking/" />
         <updated>2022-01-23T08:34:14.433Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/course/English/%E4%BD%9C%E6%96%87/</id>
+        <id>https://codelinghan.github.io/2022/course/English/%E4%BD%9C%E6%96%87/</id>
         <title>作文</title>
-        <link rel="alternate" href="http://example.com/course/English/%E4%BD%9C%E6%96%87/"/>
+        <link rel="alternate" href="https://codelinghan.github.io/2022/course/English/%E4%BD%9C%E6%96%87/"/>
         <content type="html"></content>
-        <category term="外语" scheme="http://example.com/categories/course/" />
-        <category term="English" scheme="http://example.com/categories/course/English/" />
+        <category term="外语" scheme="https://codelinghan.github.io/categories/course/" />
+        <category term="English" scheme="https://codelinghan.github.io/categories/course/English/" />
         <updated>2022-01-23T08:31:34.488Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/course/English/%E8%AF%AD%E6%B3%95/</id>
+        <id>https://codelinghan.github.io/2022/course/English/%E8%AF%AD%E6%B3%95/</id>
         <title>语法</title>
-        <link rel="alternate" href="http://example.com/course/English/%E8%AF%AD%E6%B3%95/"/>
+        <link rel="alternate" href="https://codelinghan.github.io/2022/course/English/%E8%AF%AD%E6%B3%95/"/>
         <content type="html"></content>
-        <category term="外语" scheme="http://example.com/categories/course/" />
-        <category term="English" scheme="http://example.com/categories/course/English/" />
+        <category term="外语" scheme="https://codelinghan.github.io/categories/course/" />
+        <category term="English" scheme="https://codelinghan.github.io/categories/course/English/" />
         <updated>2022-01-23T08:31:20.150Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/computer-science/Date-structure/%E7%AC%AC%E4%B8%80%E7%AB%A0/</id>
+        <id>https://codelinghan.github.io/2022/computer-science/Date-structure/%E7%AC%AC%E4%B8%80%E7%AB%A0/</id>
         <title></title>
-        <link rel="alternate" href="http://example.com/computer-science/Date-structure/%E7%AC%AC%E4%B8%80%E7%AB%A0/"/>
+        <link rel="alternate" href="https://codelinghan.github.io/2022/computer-science/Date-structure/%E7%AC%AC%E4%B8%80%E7%AB%A0/"/>
         <content type="html"></content>
-        <category term="计算机科学" scheme="http://example.com/categories/computer-science/" />
-        <category term="数据结构" scheme="http://example.com/categories/computer-science/Date-structure/" />
+        <category term="计算机科学" scheme="https://codelinghan.github.io/categories/computer-science/" />
+        <category term="数据结构" scheme="https://codelinghan.github.io/categories/computer-science/Date-structure/" />
         <updated>2022-01-23T08:30:41.465Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/computer-language/C/%E7%AC%AC%E4%B8%80%E7%AB%A0/</id>
+        <id>https://codelinghan.github.io/2022/computer-language/C/%E7%AC%AC%E4%B8%80%E7%AB%A0/</id>
         <title></title>
-        <link rel="alternate" href="http://example.com/computer-language/C/%E7%AC%AC%E4%B8%80%E7%AB%A0/"/>
+        <link rel="alternate" href="https://codelinghan.github.io/2022/computer-language/C/%E7%AC%AC%E4%B8%80%E7%AB%A0/"/>
         <content type="html"></content>
-        <category term="计算机语言" scheme="http://example.com/categories/computer-language/" />
-        <category term="C" scheme="http://example.com/categories/computer-language/C/" />
+        <category term="计算机语言" scheme="https://codelinghan.github.io/categories/computer-language/" />
+        <category term="C" scheme="https://codelinghan.github.io/categories/computer-language/C/" />
         <updated>2022-01-23T08:29:45.983Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</id>
+        <id>https://codelinghan.github.io/2022/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</id>
         <title>Life Records</title>
-        <link rel="alternate" href="http://example.com/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/"/>
+        <link rel="alternate" href="https://codelinghan.github.io/2022/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/"/>
         <content type="html"></content>
-        <category term="生活" scheme="http://example.com/tags/%E7%94%9F%E6%B4%BB/" />
+        <category term="生活" scheme="https://codelinghan.github.io/tags/%E7%94%9F%E6%B4%BB/" />
         <updated>2022-01-23T05:36:54.123Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/notes/VS%E6%8A%A5%E9%94%99%E6%80%BB%E7%BB%93/</id>
+        <id>https://codelinghan.github.io/2022/notes/VS%E6%8A%A5%E9%94%99%E6%80%BB%E7%BB%93/</id>
         <title>VS学习过程中的报错、警告记录</title>
-        <link rel="alternate" href="http://example.com/notes/VS%E6%8A%A5%E9%94%99%E6%80%BB%E7%BB%93/"/>
+        <link rel="alternate" href="https://codelinghan.github.io/2022/notes/VS%E6%8A%A5%E9%94%99%E6%80%BB%E7%BB%93/"/>
         <content type="html">&lt;h1 id=&#34;编译警告msb8028&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#编译警告msb8028&#34;&gt;#&lt;/a&gt; 编译警告 MSB8028&lt;/h1&gt;
 &lt;p&gt;中间目录 (shared-intermediate-path) 包含从另一个项目 (intermediate-path) 共享的文件 。 这可能导致错误的清理和重新生成行为。&lt;/p&gt;
 &lt;p&gt;VS 中，一个解决方案中有多个子项目时，出现 MSB8028 这个显示警告。&lt;/p&gt;
@@ -116,14 +116,14 @@
 &lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;token directive keyword&#34;&gt;define&lt;/span&gt; &lt;span class=&#34;token macro-name&#34;&gt;_CRT_SECURE_NO_WARNINGS&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;例如：&lt;/p&gt;
 &lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;token directive keyword&#34;&gt;define&lt;/span&gt; &lt;span class=&#34;token macro-name&#34;&gt;_CRT_SECURE_NO_WARNINGS&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;token directive keyword&#34;&gt;pragma&lt;/span&gt; &lt;span class=&#34;token expression&#34;&gt;&lt;span class=&#34;token function&#34;&gt;warning&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;disable&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;6031&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;token directive keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&amp;lt;stdio.h&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; a &lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token function&#34;&gt;scanf&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;%d&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt;a&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token function&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;a=%d\n&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;a&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/blockquote&gt;
 </content>
-        <category term="笔记" scheme="http://example.com/categories/notes/" />
-        <category term="C语言报错" scheme="http://example.com/tags/C%E8%AF%AD%E8%A8%80%E6%8A%A5%E9%94%99/" />
+        <category term="笔记" scheme="https://codelinghan.github.io/categories/notes/" />
+        <category term="C语言报错" scheme="https://codelinghan.github.io/tags/C%E8%AF%AD%E8%A8%80%E6%8A%A5%E9%94%99/" />
         <updated>2022-01-22T14:57:13.981Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/notes/hexoBlog%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/</id>
+        <id>https://codelinghan.github.io/2022/notes/hexoBlog%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/</id>
         <title>Hexo报错问题</title>
-        <link rel="alternate" href="http://example.com/notes/hexoBlog%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/"/>
+        <link rel="alternate" href="https://codelinghan.github.io/2022/notes/hexoBlog%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/"/>
         <content type="html">&lt;h1 id=&#34;一-highlightjs9版本已停用升级成最新版本&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-highlightjs9版本已停用升级成最新版本&#34;&gt;#&lt;/a&gt; 一、highlight.js@9 版本已停用，升级成最新版本&lt;/h1&gt;
 &lt;h2 id=&#34;1点进blog文件夹右键git-bush-here执行以下命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1点进blog文件夹右键git-bush-here执行以下命令&#34;&gt;#&lt;/a&gt; 1. 点进 Blog 文件夹，右键【Git Bush Here】，执行以下命令：&lt;/h2&gt;
 &lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npm ls highlight&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;js&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;查看 highlight.js 的位置。&lt;/p&gt;
@@ -136,14 +136,14 @@
 &lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/Codelinghan/image-hosting@master/imgpath/9.29a63m16yzvo.jpg&#34; alt=&#34;9&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;命令执行如图所示就代表成功升级。&lt;/p&gt;
 </content>
-        <category term="笔记" scheme="http://example.com/categories/notes/" />
-        <category term="Hexo" scheme="http://example.com/tags/Hexo/" />
+        <category term="笔记" scheme="https://codelinghan.github.io/categories/notes/" />
+        <category term="Hexo" scheme="https://codelinghan.github.io/tags/Hexo/" />
         <updated>2022-01-11T12:34:19.653Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/%E6%90%AD%E5%BB%BAhexoBlog/</id>
+        <id>https://codelinghan.github.io/2022/%E6%90%AD%E5%BB%BAhexoBlog/</id>
         <title>搭建Hexo的基本工具</title>
-        <link rel="alternate" href="http://example.com/%E6%90%AD%E5%BB%BAhexoBlog/"/>
+        <link rel="alternate" href="https://codelinghan.github.io/2022/%E6%90%AD%E5%BB%BAhexoBlog/"/>
         <content type="html">&lt;h1 id=&#34;一-下载git官网下载&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-下载git官网下载&#34;&gt;#&lt;/a&gt; 一、下载 Git: 官网下载&lt;/h1&gt;
 &lt;pre&gt;&lt;code&gt;    傻瓜式安装，一路跟着推荐安装好，或者从网上搜索安装步骤。
 &lt;/code&gt;&lt;/pre&gt;
@@ -225,13 +225,13 @@
  打开 Git 命令页面，执行 git 命令脚本：修改设置，解除 ssl 验证&lt;/p&gt;
 &lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;git config &lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;global http&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;sslVerify &lt;span class=&#34;token string&#34;&gt;&#34;false&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/Codelinghan/image-hosting@master/imgpath/7.4v49t67vv6s0.jpg&#34; alt=&#34;7&#34; /&gt;&lt;/p&gt;
 </content>
-        <category term="Hexo" scheme="http://example.com/tags/Hexo/" />
+        <category term="Hexo" scheme="https://codelinghan.github.io/tags/Hexo/" />
         <updated>2022-01-10T11:34:36.849Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/ssh%20key%20%E8%AE%BE%E7%BD%AE/</id>
+        <id>https://codelinghan.github.io/2022/ssh%20key%20%E8%AE%BE%E7%BD%AE/</id>
         <title>ssh key 设置</title>
-        <link rel="alternate" href="http://example.com/ssh%20key%20%E8%AE%BE%E7%BD%AE/"/>
+        <link rel="alternate" href="https://codelinghan.github.io/2022/ssh%20key%20%E8%AE%BE%E7%BD%AE/"/>
         <content type="html">&lt;p&gt;在 gitee、github、本地 gitlab 上同时添加 ssh key&lt;/p&gt;
 &lt;h1 id=&#34;一-打开-ssh文件夹&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-打开-ssh文件夹&#34;&gt;#&lt;/a&gt; 一、打开 .ssh 文件夹&lt;/h1&gt;
 &lt;blockquote&gt;
