@@ -8,7 +8,164 @@
     <author>
       <name>FreeDom</name>
     </author>
-    <updated>2022-01-23T08:34:52.738Z</updated>
+    <updated>2022-01-25T14:11:57.977Z</updated>
+    <entry>
+        <id>https://codelinghan.github.io/2022/notes/02.GitHub%E4%B8%8A%E4%BC%A0%E6%8A%A5%E9%94%99/</id>
+        <title>将本地项目上传到Github</title>
+        <link rel="alternate" href="https://codelinghan.github.io/2022/notes/02.GitHub%E4%B8%8A%E4%BC%A0%E6%8A%A5%E9%94%99/"/>
+        <content type="html">&lt;h1 id=&#34;创建本地仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建本地仓库&#34;&gt;#&lt;/a&gt; 创建本地仓库&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;打开本地项目的根目录，右键&lt;span class=&#34;red&#34;&gt; Git Bash Here&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;执行以下命令：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ git init&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token comment&#34;&gt;//&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ git status&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token comment&#34;&gt;// &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ git add &lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token comment&#34;&gt;//&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ git commit &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;m&lt;span class=&#34;token string&#34;&gt;&#34;提交文件&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token comment&#34;&gt;//&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;关联github仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#关联github仓库&#34;&gt;#&lt;/a&gt; 关联 GitHub 仓库&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;新建 GitHub 仓库（例如：仓库名为 Blog），注意，这个仓库是空仓库，什么都没有&lt;/li&gt;
+&lt;li&gt;GitHub 仓库建立后，与本地仓库关联（有两种方式）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;第一种&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;执行命令&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ git remote add origin git@github&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;com&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;smfx1314&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;Blog&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;git&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;第二种&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;打开本地项目的根目录，打开&lt;span class=&#34;red&#34;&gt;.git&lt;/span&gt; 文件夹（这个是隐藏文件夹）&lt;/li&gt;
+&lt;li&gt;打开&lt;span class=&#34;red&#34;&gt; config&lt;/span&gt; 文件，将以下代码复制粘贴进去：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;remote &lt;span class=&#34;token string&#34;&gt;&#34;origin&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	url &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; git@github&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;com&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;你的GitHub用户名&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;Blog&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;git&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	fetch &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;refs&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;heads&lt;span class=&#34;token comment&#34;&gt;/*:refs/remotes/origin/*&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;[branch &#34;master&#34;]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  remote = origin&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  merge = refs/heads/master&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;执行以下命令，查看是否成功&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ git remote &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;v&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;结果如图：&lt;/p&gt;
+&lt;h1 id=&#34;将本地项目所有内容推送到github仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#将本地项目所有内容推送到github仓库&#34;&gt;#&lt;/a&gt; 将本地项目所有内容推送到 GitHub 仓库&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;执行命令：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ git push origin master&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;上传过程中的问题报错&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#上传过程中的问题报错&#34;&gt;#&lt;/a&gt; 上传过程中的问题，报错&lt;/h1&gt;
+&lt;h3 id=&#34;报错fatal-couldnt-find-remote-ref-master&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#报错fatal-couldnt-find-remote-ref-master&#34;&gt;#&lt;/a&gt; 报错：fatal: couldn&#39;t find remote ref master&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;解决方法：&lt;/li&gt;
+&lt;li&gt;打开本地项目的根目录，打开&lt;span class=&#34;red&#34;&gt;.git&lt;/span&gt; 文件夹（这个是隐藏文件夹）&lt;/li&gt;
+&lt;li&gt;打开&lt;span class=&#34;red&#34;&gt; config&lt;/span&gt; 文件，将以下代码复制粘贴进去：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;branch &lt;span class=&#34;token string&#34;&gt;&#34;master&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  remote &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; origin&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  merge &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; refs&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;heads&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;master&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;errorsrc-refspec-master-does-not-match-any或者error-failed-to-push-some-refs-to&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#errorsrc-refspec-master-does-not-match-any或者error-failed-to-push-some-refs-to&#34;&gt;#&lt;/a&gt; error:src refspec master does not match any 或者 error: failed to push some refs to&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;出错原因：(有可能)&lt;br /&gt;
+ 本地的 origin 与 remote 中的 master 未建立联系；&lt;/li&gt;
+&lt;li&gt;解决方法：&lt;br /&gt;
+1. 打开本地项目的根目录，打开&lt;span class=&#34;red&#34;&gt;.git&lt;/span&gt; 文件夹（这个是隐藏文件夹）&lt;br /&gt;
+2. 打开&lt;span class=&#34;red&#34;&gt; config&lt;/span&gt; 文件，将以下代码复制粘贴进去：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;branch &lt;span class=&#34;token string&#34;&gt;&#34;master&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  remote &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; origin&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  merge &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; refs&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;heads&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;master&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt; 我出现以上两种报错均因为[本地的origin与remote中的master没有建立联系]&amp;#123;.red&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;补充：出错原因还有可能是：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1.GitHub 仓库中的文件与本地项目中的文件产生冲突；&lt;br /&gt;
+2. 本地项目中的文件有空文件；&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+        <category term="笔记" scheme="https://codelinghan.github.io/categories/notes/" />
+        <category term="Github" scheme="https://codelinghan.github.io/tags/Github/" />
+        <updated>2022-01-25T14:11:57.977Z</updated>
+    </entry>
+    <entry>
+        <id>https://codelinghan.github.io/2022/Hexo/01.%E6%90%AD%E5%BB%BAHexo/</id>
+        <title>Hexo+shoka+GitHub搭建相关问题</title>
+        <link rel="alternate" href="https://codelinghan.github.io/2022/Hexo/01.%E6%90%AD%E5%BB%BAHexo/"/>
+        <content type="html">&lt;h1 id=&#34;下载git官网下载&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#下载git官网下载&#34;&gt;#&lt;/a&gt; 下载 Git: 官网下载&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;一路跟着推荐安装即可，或者从网上搜索安装步骤。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;安装nodejs官网下载&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装nodejs官网下载&#34;&gt;#&lt;/a&gt; 安装 node.js: 官网下载&lt;/h1&gt;
+&lt;h1 id=&#34;根据网上教程配置git和nodejs的环境变量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#根据网上教程配置git和nodejs的环境变量&#34;&gt;#&lt;/a&gt; 根据网上教程配置 Git 和 node.js 的环境变量&lt;/h1&gt;
+&lt;h1 id=&#34;运行cmd&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#运行cmd&#34;&gt;#&lt;/a&gt; 运行 cmd&lt;/h1&gt;
+&lt;h2 id=&#34;1分别输入下列每输一行敲一个回车注意空格&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1分别输入下列每输一行敲一个回车注意空格&#34;&gt;#&lt;/a&gt; 1.(分别输入，下列每输一行敲一个回车)(注意空格)&lt;/h2&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;node &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;v&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npm &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;v&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;git &lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;version&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;得到相对应的版本信息（如图）:&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/Codelinghan/image-hosting@master/imgpath/3.63ri0l0i4400.webp&#34; alt=&#34;3&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;如果都可以成功运行出现版本信息证明安装成功。&lt;/p&gt;
+&lt;h2 id=&#34;2安装hexo&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2安装hexo&#34;&gt;#&lt;/a&gt; 2. 安装 Hexo&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;  (1)必须按照步骤来，因为hexo需要使用node.js的npm;
+  (2)打开cmd命令行(win+r 输入cmd回车)分别执行:
+&lt;/code&gt;&lt;/pre&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npm install hexo&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;cli &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;g&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;3等待自动安装完成后-输入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3等待自动安装完成后-输入&#34;&gt;#&lt;/a&gt; 3. 等待自动安装完成后。输入&lt;/h2&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;v&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;4检查是否安装成功&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4检查是否安装成功&#34;&gt;#&lt;/a&gt; 4. 检查是否安装成功&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;到这一步如果所有都安装成功，并测试无问题，那么本地配置已经搞定，下面开始在 github 上建项目了。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;在github上创建并设置远程库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#在github上创建并设置远程库&#34;&gt;#&lt;/a&gt; 在 github 上创建并设置远程库&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1. 选择 New repository，&lt;br /&gt;
+2. 在 Repository name 下面填写你要创建的地址，这个地址是就是你的域名，以 github.io 结尾。&lt;br /&gt;
+例如：填写 &amp;quot;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3dhcGNoaWVmLmdpdGh1Yi5pbw==&#34;&gt;wapchief.github.io&lt;/span&gt;&amp;quot;以后，在地址栏直接输入&amp;quot;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3dhcGNoaWVmLmdpdGh1Yi5pbw==&#34;&gt;wapchief.github.io&lt;/span&gt;&amp;quot; 就可以访问网站，&lt;br /&gt;
+ 按照提示一步步完成创建。&lt;br /&gt;
+3. 创建之后，点击 setting 设置远程库：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;(1) 找到 &amp;quot;GitHub Pages&amp;quot; 点击 &amp;quot;Automatic page generator&amp;quot; 等待 github pages 创建完成。&lt;br /&gt;
+(2) 输入你创建的地址测试 github pager 是否创建成功。此时页面是空的没有任何东西。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;作者本人的操作是：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;1. 选择 New repository&lt;/li&gt;
+&lt;li&gt;2. 在 Repository name 下面填写要创建的地址，这个地址就是我的域名，以 github.io 结尾。&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3huLS1jb2RlbGluZ2hhbi11OTFzLmdpdGh1Yi5pbw==&#34;&gt;即 codelinghan.github.io&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;3. 选择 public&lt;/li&gt;
+&lt;li&gt;4. 点击新建仓库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;配置git和nodejs&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#配置git和nodejs&#34;&gt;#&lt;/a&gt; 配置 Git 和 node.js&lt;/h1&gt;
+&lt;p&gt;配置个人的用户名称和电子邮件地址：&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ git config &lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;global user&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;name &lt;span class=&#34;token string&#34;&gt;&#34;xxx&#34;&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;//xxx 指 GitHub 用户名&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ git config &lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;global user&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;email &lt;span class=&#34;token string&#34;&gt;&#34;767523580@qq.com&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token comment&#34;&gt;// 随便写一个邮箱即可，或者写 Github 上的邮箱&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;可以查看已有的配置信息：&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ git config &lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;list&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;生成博客内容&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#生成博客内容&#34;&gt;#&lt;/a&gt; 生成博客内容&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1. 初始化 hexo 基础配置文件。&lt;br /&gt;
+初始化时间比较长，不用急，等完成后输入：&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo init&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;2. 然后输入：&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo g&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;// 加载 hexo 基础 html、css、js 等文件。在这完成后等于已经在本地创建了一个网页&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;3. 接着输入：&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo s&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;span class=&#34;token comment&#34;&gt;// 然后相当于开启了一个本地的服务器，会提示你拷贝 url 到浏览器&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/Codelinghan/image-hosting@master/imgpath/5.26osu2rhnon.jpg&#34; alt=&#34;5&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;会看到以下的页面，证明本地 hexo 默认模板配置成功。&lt;br /&gt;
+&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/Codelinghan/image-hosting@master/imgpath/6.izctum4a3q0.jpg&#34; alt=&#34;6&#34; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;部署blog到互联网&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#部署blog到互联网&#34;&gt;#&lt;/a&gt; 部署 Blog 到互联网&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;【1】 打开 Blog 文件夹，打开 “_config.yml” 文件&lt;br /&gt;
+修改最后的 deploy 为&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  deploy:
+       type: git
+       repo: https://github.com/Codelinghan/Codelinghan.github.io.git
+       branch: main
+
+   注意：
+         repo: https://github.com/Codelinghan/Codelinghan.github.io.git
+              （https://github.com/Codelinghan/Codelinghan.github.io.git 这个链接是Github的仓库地址）
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;【2】在创建的 blog 的目录下，安装部署工具（方便以后更新）&lt;br /&gt;
+即：在创建的 blog 的目录下，运行【Git Bash Here】, 执行下列命令：&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;span&gt;{.line-numbers}      &lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npm install hexo&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;deployer&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;git &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;save&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;           &lt;span class=&#34;token comment&#34;&gt;// 自动部署发布工具&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/blockquote&gt;
+&lt;h1 id=&#34;在创建的blog的目录下&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#在创建的blog的目录下&#34;&gt;#&lt;/a&gt; 在创建的 blog 的目录下&lt;/h1&gt;
+&lt;p&gt;运行【Git Bash Here】, 执行下列命令：&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;span&gt;{.line-numbers} &lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo c   &lt;span class=&#34;token comment&#34;&gt;// 清理一下         &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo g   &lt;span class=&#34;token comment&#34;&gt;// 指生成               &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo d   &lt;span class=&#34;token comment&#34;&gt;// 部署到远程 Github 仓库&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;出现的问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#出现的问题&#34;&gt;#&lt;/a&gt; 出现的问题&lt;/h1&gt;
+&lt;h2 id=&#34;出现maybe-you-can-find-the-solution-herehttphexoiodocstroubleshootinghtml报错&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#出现maybe-you-can-find-the-solution-herehttphexoiodocstroubleshootinghtml报错&#34;&gt;#&lt;/a&gt; 出现 Maybe you can find the solution here:&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2hleG8uaW8vZG9jcy90cm91Ymxlc2hvb3RpbmcuaHRtbCVFNiU4QSVBNSVFOSU5NCU5OSVFRiVCQyU5QQ==&#34;&gt;http://hexo.io/docs/troubleshooting.html 报错：&lt;/span&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;主要问题是找不到 git 分支，然后我查看当前文件夹没有.git 文件夹，使用 git init 生成 git 文件夹。&lt;br /&gt;
+然后使用 hexo deploy（即：hexo d）上传即可&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo d&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;git报错解决openssl-ssl_read-connection-was-reset-errno-10054&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git报错解决openssl-ssl_read-connection-was-reset-errno-10054&#34;&gt;#&lt;/a&gt; Git 报错解决：OpenSSL SSL_read: Connection was reset, errno 10054&lt;/h2&gt;
+&lt;p&gt;错误解决：&lt;br /&gt;
+(1) 首先，造成这个错误很有可能是网络不稳定，连接超时导致的，&lt;br /&gt;
+(2) 如果再次尝试后依然报错，可以执行下面的命令:&lt;br /&gt;
+ 打开 Git 命令页面，执行 git 命令脚本：修改设置，解除 ssl 验证&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;git config &lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;global http&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;sslVerify &lt;span class=&#34;token string&#34;&gt;&#34;false&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/Codelinghan/image-hosting@master/imgpath/7.4v49t67vv6s0.jpg&#34; alt=&#34;7&#34; /&gt;&lt;/p&gt;
+</content>
+        <category term="Hexo" scheme="https://codelinghan.github.io/categories/Hexo/" />
+        <category term="Hexo" scheme="https://codelinghan.github.io/tags/Hexo/" />
+        <updated>2022-01-25T14:11:57.962Z</updated>
+    </entry>
     <entry>
         <id>https://codelinghan.github.io/2022/computer-science/operating-system/%E7%AC%AC%E4%B8%80%E7%AB%A0/</id>
         <title></title>
@@ -140,95 +297,6 @@
         <category term="Hexo" scheme="https://codelinghan.github.io/categories/Hexo/" />
         <category term="Hexo" scheme="https://codelinghan.github.io/tags/Hexo/" />
         <updated>2022-01-11T12:34:19.653Z</updated>
-    </entry>
-    <entry>
-        <id>https://codelinghan.github.io/2022/Hexo/01.%E6%90%AD%E5%BB%BAHexo/</id>
-        <title>Hexo+shoka+GitHub搭建相关问题</title>
-        <link rel="alternate" href="https://codelinghan.github.io/2022/Hexo/01.%E6%90%AD%E5%BB%BAHexo/"/>
-        <content type="html">&lt;h1 id=&#34;一-下载git官网下载&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-下载git官网下载&#34;&gt;#&lt;/a&gt; 一、下载 Git: 官网下载&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;    傻瓜式安装，一路跟着推荐安装好，或者从网上搜索安装步骤。
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;二-安装nodejs官网下载&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#二-安装nodejs官网下载&#34;&gt;#&lt;/a&gt; 二、安装 node.js: 官网下载&lt;/h1&gt;
-&lt;h1 id=&#34;三-根据网上教程配置git和nodejs的环境变量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#三-根据网上教程配置git和nodejs的环境变量&#34;&gt;#&lt;/a&gt; 三、根据网上教程配置 Git 和 node.js 的环境变量&lt;/h1&gt;
-&lt;h1 id=&#34;四-运行cmd&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#四-运行cmd&#34;&gt;#&lt;/a&gt; 四、 运行 cmd&lt;/h1&gt;
-&lt;h2 id=&#34;1分别输入下列每输一行敲一个回车注意空格&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1分别输入下列每输一行敲一个回车注意空格&#34;&gt;#&lt;/a&gt; 1.(分别输入，下列每输一行敲一个回车)(注意空格)&lt;/h2&gt;
-&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;node &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;v&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npm &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;v&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;git &lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;version&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;得到相对应的版本信息（如图）:&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/Codelinghan/image-hosting@master/imgpath/3.63ri0l0i4400.webp&#34; alt=&#34;3&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;如果都可以成功运行出现版本信息证明安装成功。&lt;/p&gt;
-&lt;h2 id=&#34;2安装hexo&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2安装hexo&#34;&gt;#&lt;/a&gt; 2. 安装 Hexo&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;  (1)必须按照步骤来，因为hexo需要使用node.js的npm;
-  (2)打开cmd命令行(win+r 输入cmd回车)分别执行:
-&lt;/code&gt;&lt;/pre&gt;
-&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npm install hexo&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;cli &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;g&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;3等待自动安装完成后-输入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3等待自动安装完成后-输入&#34;&gt;#&lt;/a&gt; 3. 等待自动安装完成后。输入&lt;/h2&gt;
-&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;v&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;4检查是否安装成功到这一步如果所有都安装成功并测试无问题那么本地配置已经搞定下面开始在github上建项目了&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4检查是否安装成功到这一步如果所有都安装成功并测试无问题那么本地配置已经搞定下面开始在github上建项目了&#34;&gt;#&lt;/a&gt; 4. 检查是否安装成功，到这一步如果所有都安装成功，并测试无问题，那么本地配置已经搞定，下面开始在 github 上建项目了。&lt;/h2&gt;
-&lt;h1 id=&#34;五-在github上创建并设置远程库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#五-在github上创建并设置远程库&#34;&gt;#&lt;/a&gt; 五、在 github 上创建并设置远程库&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;1. 选择 New repository，&lt;br /&gt;
-2. 在 Repository name 下面填写你要创建的地址，这个地址是就是你的域名，以 github.io 结尾。&lt;br /&gt;
-例如：填写 &amp;quot;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3dhcGNoaWVmLmdpdGh1Yi5pbw==&#34;&gt;wapchief.github.io&lt;/span&gt;&amp;quot;以后，在地址栏直接输入&amp;quot;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3dhcGNoaWVmLmdpdGh1Yi5pbw==&#34;&gt;wapchief.github.io&lt;/span&gt;&amp;quot; 就可以访问网站，&lt;br /&gt;
- 按照提示一步步完成创建。&lt;br /&gt;
-3. 创建之后，点击 setting 设置远程库：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;(1) 找到 &amp;quot;GitHub Pages&amp;quot; 点击 &amp;quot;Automatic page generator&amp;quot; 等待 github pages 创建完成。&lt;br /&gt;
-(2) 输入你创建的地址测试 github pager 是否创建成功。此时页面是空的没有任何东西。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;作者本人的操作是：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;1. 选择 New repository&lt;/li&gt;
-&lt;li&gt;2. 在 Repository name 下面填写要创建的地址，这个地址就是我的域名，以 github.io 结尾。&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3huLS1jb2RlbGluZ2hhbi11OTFzLmdpdGh1Yi5pbw==&#34;&gt;即 codelinghan.github.io&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;3. 选择 public&lt;/li&gt;
-&lt;li&gt;4. 点击新建仓库&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&#34;六-配置git和nodejs&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#六-配置git和nodejs&#34;&gt;#&lt;/a&gt; 六、配置 Git 和 node.js&lt;/h1&gt;
-&lt;p&gt;配置个人的用户名称和电子邮件地址：&lt;/p&gt;
-&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ git config &lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;global user&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;name &lt;span class=&#34;token string&#34;&gt;&#34;xxx&#34;&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;//xxx 指 GitHub 用户名&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ git config &lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;global user&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;email &lt;span class=&#34;token string&#34;&gt;&#34;767523580@qq.com&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token comment&#34;&gt;// 随便写一个邮箱即可，或者写 Github 上的邮箱&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;可以查看已有的配置信息：&lt;/p&gt;
-&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ git config &lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;list&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;七-生成博客内容&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#七-生成博客内容&#34;&gt;#&lt;/a&gt; 七、生成博客内容&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;1. 初始化 hexo 基础配置文件。&lt;br /&gt;
-初始化时间比较长，不用急，等完成后输入：&lt;/p&gt;
-&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo init&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;2. 然后输入：&lt;/p&gt;
-&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo g&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;// 加载 hexo 基础 html、css、js 等文件。在这完成后等于已经在本地创建了一个网页&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;3. 接着输入：&lt;/p&gt;
-&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo s&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;span class=&#34;token comment&#34;&gt;// 然后相当于开启了一个本地的服务器，会提示你拷贝 url 到浏览器&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/Codelinghan/image-hosting@master/imgpath/5.26osu2rhnon.jpg&#34; alt=&#34;5&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;会看到以下的页面，证明本地 hexo 默认模板配置成功。&lt;br /&gt;
-&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/Codelinghan/image-hosting@master/imgpath/6.izctum4a3q0.jpg&#34; alt=&#34;6&#34; /&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&#34;八-部署blog到互联网&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#八-部署blog到互联网&#34;&gt;#&lt;/a&gt; 八、部署 Blog 到互联网&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;【1】 打开 Blog 文件夹，打开 “_config.yml” 文件&lt;br /&gt;
-修改最后的 deploy 为&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;  deploy:
-       type: git
-       repo: https://github.com/Codelinghan/Codelinghan.github.io.git
-       branch: main
-
-   注意：
-         repo: https://github.com/Codelinghan/Codelinghan.github.io.git
-              （https://github.com/Codelinghan/Codelinghan.github.io.git 这个链接是Github的仓库地址）
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;【2】在创建的 blog 的目录下，安装部署工具（方便以后更新）&lt;br /&gt;
-即：在创建的 blog 的目录下，运行【Git Bash Here】, 执行下列命令：&lt;/p&gt;
-&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;span&gt;{.line-numbers}      &lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npm install hexo&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;deployer&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;git &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;save&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;           &lt;span class=&#34;token comment&#34;&gt;// 自动部署发布工具&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/blockquote&gt;
-&lt;h1 id=&#34;九-在创建的blog的目录下&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#九-在创建的blog的目录下&#34;&gt;#&lt;/a&gt; 九、在创建的 blog 的目录下&lt;/h1&gt;
-&lt;p&gt;运行【Git Bash Here】, 执行下列命令：&lt;/p&gt;
-&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;span&gt;{.line-numbers} &lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo c   &lt;span class=&#34;token comment&#34;&gt;// 清理一下         &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo g   &lt;span class=&#34;token comment&#34;&gt;// 指生成               &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo d   &lt;span class=&#34;token comment&#34;&gt;// 部署到远程 Github 仓库&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;十-问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#十-问题&#34;&gt;#&lt;/a&gt; 十、问题&lt;/h1&gt;
-&lt;h2 id=&#34;出现maybe-you-can-find-the-solution-herehttphexoiodocstroubleshootinghtml报错&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#出现maybe-you-can-find-the-solution-herehttphexoiodocstroubleshootinghtml报错&#34;&gt;#&lt;/a&gt; 出现 Maybe you can find the solution here:&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2hleG8uaW8vZG9jcy90cm91Ymxlc2hvb3RpbmcuaHRtbCVFNiU4QSVBNSVFOSU5NCU5OSVFRiVCQyU5QQ==&#34;&gt;http://hexo.io/docs/troubleshooting.html 报错：&lt;/span&gt;&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;主要问题是找不到 git 分支，然后我查看当前文件夹没有.git 文件夹，使用 git init 生成 git 文件夹。&lt;br /&gt;
-然后使用 hexo deploy（即：hexo d）上传即可&lt;/p&gt;
-&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo d&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/blockquote&gt;
-&lt;h2 id=&#34;git报错解决openssl-ssl_read-connection-was-reset-errno-10054&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git报错解决openssl-ssl_read-connection-was-reset-errno-10054&#34;&gt;#&lt;/a&gt; Git 报错解决：OpenSSL SSL_read: Connection was reset, errno 10054&lt;/h2&gt;
-&lt;p&gt;错误解决：&lt;br /&gt;
-(1) 首先，造成这个错误很有可能是网络不稳定，连接超时导致的，&lt;br /&gt;
-(2) 如果再次尝试后依然报错，可以执行下面的命令:&lt;br /&gt;
- 打开 Git 命令页面，执行 git 命令脚本：修改设置，解除 ssl 验证&lt;/p&gt;
-&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;git config &lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;global http&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;sslVerify &lt;span class=&#34;token string&#34;&gt;&#34;false&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/Codelinghan/image-hosting@master/imgpath/7.4v49t67vv6s0.jpg&#34; alt=&#34;7&#34; /&gt;&lt;/p&gt;
-</content>
-        <category term="Hexo" scheme="https://codelinghan.github.io/categories/Hexo/" />
-        <category term="Hexo" scheme="https://codelinghan.github.io/tags/Hexo/" />
-        <updated>2022-01-10T11:34:36.849Z</updated>
     </entry>
     <entry>
         <id>https://codelinghan.github.io/2022/Hexo/04.ssh%20key%20%E8%AE%BE%E7%BD%AE/</id>
