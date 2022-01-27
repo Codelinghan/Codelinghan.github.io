@@ -10,8 +10,65 @@
         </author>
         <description>生活记录 &amp; 计算机学习</description>
         <language>zh-CN</language>
-        <pubDate>Tue, 25 Jan 2022 22:11:57 +0800</pubDate>
-        <lastBuildDate>Tue, 25 Jan 2022 22:11:57 +0800</lastBuildDate>
+        <pubDate>Thu, 27 Jan 2022 19:51:35 +0800</pubDate>
+        <lastBuildDate>Thu, 27 Jan 2022 19:51:35 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">https://codelinghan.github.io/2022/Hexo/%E6%B7%BB%E5%8A%A0ssh%20key/</guid>
+            <title>添加 ssh key</title>
+            <link>https://codelinghan.github.io/2022/Hexo/%E6%B7%BB%E5%8A%A0ssh%20key/</link>
+            <category term="Hexo" scheme="https://codelinghan.github.io/categories/Hexo/" />
+            <category term=".ssh key" scheme="https://codelinghan.github.io/tags/ssh-key/" />
+            <pubDate>Thu, 27 Jan 2022 19:51:35 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;在 gitee、github、本地 gitlab 上同时添加 ssh key&lt;/p&gt;
+&lt;h1 id=&#34;一-打开-ssh文件夹&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-打开-ssh文件夹&#34;&gt;#&lt;/a&gt; 一、打开 .ssh 文件夹&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;C:\Users\Administrator.ssh&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;二-打开git-bash-here&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#二-打开git-bash-here&#34;&gt;#&lt;/a&gt; 二、打开【git bash here】&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在.ssh 文件夹右键打开【git bash here】&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;三-通过执行以下命令依次生成ssh-key&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#三-通过执行以下命令依次生成ssh-key&#34;&gt;#&lt;/a&gt; 三、通过执行以下命令，依次生成 ssh key&lt;/h1&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ ssh&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;keygen &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;t rsa &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;C &lt;span class=&#34;token string&#34;&gt;&#34;xxx@qq.com&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;f &lt;span class=&#34;token string&#34;&gt;&#34;gitee_id_rsa&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ ssh&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;keygen &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;t rsa &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;C &lt;span class=&#34;token string&#34;&gt;&#34;xxx@qq.com&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;f &lt;span class=&#34;token string&#34;&gt;&#34;github_id_rsa&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ ssh&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;keygen &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;t rsa &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;C &lt;span class=&#34;token string&#34;&gt;&#34;xxx@qq.com&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;f &lt;span class=&#34;token string&#34;&gt;&#34;gitlab_id_rsa&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;完成后，.ssh 文件夹中显示如下图:&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/Codelinghan/image-hosting@master/imgpath/1.6hvrs1lf63w0.webp&#34; alt=&#34;1&#34; /&gt;&lt;/p&gt;
+&lt;h1 id=&#34;四-在gitee-github-本地gitlab上配置ssh-key&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#四-在gitee-github-本地gitlab上配置ssh-key&#34;&gt;#&lt;/a&gt; 四、在 gitee、github、本地 gitlab 上配置 ssh key&lt;/h1&gt;
+&lt;p&gt;生成后查看 ssh 公钥，即执行下列命令：&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ cat &lt;span class=&#34;token operator&#34;&gt;~&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;ssh&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;gitee_id_rsa&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;pub&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;将其内容复制到 gitee 的 ssh key 中保存。&lt;/p&gt;
+&lt;p&gt;同理，GitHub，gitlab 也是相同操作。&lt;/p&gt;
+&lt;h1 id=&#34;五-创建config文件解决ssh冲突&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#五-创建config文件解决ssh冲突&#34;&gt;#&lt;/a&gt; 五、创建 config 文件解决 ssh 冲突&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1. 执行命令：&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ vi config&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;2. 输入字母 i，进入编辑模式；&lt;br /&gt;
+3. 再点击 esc, 输入 “： wq”，再按回车；&lt;br /&gt;
+4. 找到 config 文件，并打开，将以下内容复制到 config 文件中，再保存。&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;token directive keyword&#34;&gt;gitee&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Host gitee&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;HostName gitee&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;PreferredAuthentications publickey&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;IdentityFile &lt;span class=&#34;token operator&#34;&gt;~&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;ssh&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;gitee_id_rsa&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;token directive keyword&#34;&gt;github&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Host github&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;HostName github&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;PreferredAuthentications publickey&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;IdentityFile &lt;span class=&#34;token operator&#34;&gt;~&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;ssh&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;github_id_rsa&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;token directive keyword&#34;&gt;gitlab&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;host gitlab&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hostname git@&lt;span class=&#34;token number&#34;&gt;192.168&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1.111&lt;/span&gt;  # 添加自己公司的私有ip即可&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;PreferredAuthentications publickey&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;IdentityFile &lt;span class=&#34;token operator&#34;&gt;~&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;ssh&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;gitlab_id_rsa&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/blockquote&gt;
+&lt;h1 id=&#34;六-测试是否连接成功&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#六-测试是否连接成功&#34;&gt;#&lt;/a&gt; 六、测试是否连接成功&lt;/h1&gt;
+&lt;p&gt;分别执行以下命令：&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ ssh &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;T git@gitee&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ ssh &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;T git@github&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;测试 gitlab 命令：&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ ssh &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;T git@&lt;span class=&#34;token number&#34;&gt;192.168&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1.111&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;输出以下内容就表示连接成功：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/Codelinghan/image-hosting@master/imgpath/2.59rjp8lrpy00.jpg&#34; alt=&#34;2&#34; /&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://codelinghan.github.io/2022/Hexo/Hexo%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98/</guid>
+            <title>Hexo报错问题</title>
+            <link>https://codelinghan.github.io/2022/Hexo/Hexo%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98/</link>
+            <category term="Hexo" scheme="https://codelinghan.github.io/categories/Hexo/" />
+            <category term="Hexo" scheme="https://codelinghan.github.io/tags/Hexo/" />
+            <pubDate>Thu, 27 Jan 2022 19:47:10 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;一-highlightjs9版本已停用升级成最新版本&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-highlightjs9版本已停用升级成最新版本&#34;&gt;#&lt;/a&gt; 一、highlight.js@9 版本已停用，升级成最新版本&lt;/h1&gt;
+&lt;h2 id=&#34;1点进blog文件夹右键git-bush-here执行以下命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1点进blog文件夹右键git-bush-here执行以下命令&#34;&gt;#&lt;/a&gt; 1. 点进 Blog 文件夹，右键【Git Bush Here】，执行以下命令：&lt;/h2&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npm ls highlight&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;js&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;查看 highlight.js 的位置。&lt;/p&gt;
+&lt;p&gt;即：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/Codelinghan/image-hosting@master/imgpath/8.43hvucp4ecs0.jpg&#34; alt=&#34;8&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2进入带有highlightjs的位置文件夹右键git-bush-here执行以下命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2进入带有highlightjs的位置文件夹右键git-bush-here执行以下命令&#34;&gt;#&lt;/a&gt; 2. 进入带有 highlight.js 的位置文件夹，右键【Git Bush Here】，执行以下命令：&lt;/h2&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npm uninstall highlight&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;js&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;再执行：&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npm install highlight&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;js &lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;save&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;检验，执行以下命令：&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npm ls highlight&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;js&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;即：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/Codelinghan/image-hosting@master/imgpath/9.29a63m16yzvo.jpg&#34; alt=&#34;9&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;命令执行如图所示就代表成功升级。&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://codelinghan.github.io/2022/notes/02.GitHub%E4%B8%8A%E4%BC%A0%E6%8A%A5%E9%94%99/</guid>
             <title>将本地项目上传到Github</title>
@@ -77,32 +134,41 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codelinghan.github.io/2022/Hexo/01.%E6%90%AD%E5%BB%BAHexo/</guid>
-            <title>Hexo+shoka+GitHub搭建相关问题</title>
-            <link>https://codelinghan.github.io/2022/Hexo/01.%E6%90%AD%E5%BB%BAHexo/</link>
+            <guid isPermalink="true">https://codelinghan.github.io/2022/Hexo/01.%E6%90%AD%E5%BB%BA%20Hexo/</guid>
+            <title>Hexo+shoka+GitHub搭建</title>
+            <link>https://codelinghan.github.io/2022/Hexo/01.%E6%90%AD%E5%BB%BA%20Hexo/</link>
             <category term="Hexo" scheme="https://codelinghan.github.io/categories/Hexo/" />
             <category term="Hexo" scheme="https://codelinghan.github.io/tags/Hexo/" />
             <pubDate>Tue, 25 Jan 2022 22:11:57 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;下载git官网下载&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#下载git官网下载&#34;&gt;#&lt;/a&gt; 下载 Git: 官网下载&lt;/h1&gt;
+            <description><![CDATA[ &lt;div class=&#34;note primary&#34;&gt;
+&lt;p&gt;🍒&lt;span&gt;搭建 Hexo&lt;/span&gt;[&lt;span class=&#34;purple&#34;&gt;搭建 Hexo&lt;/span&gt;](&lt;a href=&#34;https://codelinghan.github.io/2022/Hexo/01.%E6%90%AD%E5%BB%BAHexo/&#34;&gt;https://codelinghan.github.io/2022/Hexo/01. 搭建 Hexo/&lt;/a&gt;)-&lt;br /&gt;
+🍑&lt;span&gt;配置 shoka 主题&lt;/span&gt; [&lt;span class=&#34;purple&#34;&gt;配置 shoka 主题&lt;/span&gt;]()-&lt;br /&gt;
+🍌&lt;span&gt;shoka 主题优化&lt;/span&gt; [&lt;span class=&#34;purple&#34;&gt;shoka 主题优化&lt;/span&gt;]()-&lt;br /&gt;
+🍇&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1 id=&#34;下载git官网下载&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#下载git官网下载&#34;&gt;#&lt;/a&gt; 下载 Git: 官网下载&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;一路跟着推荐安装即可，或者从网上搜索安装步骤。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;安装nodejs官网下载&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装nodejs官网下载&#34;&gt;#&lt;/a&gt; 安装 node.js: 官网下载&lt;/h1&gt;
-&lt;h1 id=&#34;根据网上教程配置git和nodejs的环境变量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#根据网上教程配置git和nodejs的环境变量&#34;&gt;#&lt;/a&gt; 根据网上教程配置 Git 和 node.js 的环境变量&lt;/h1&gt;
-&lt;h1 id=&#34;运行cmd&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#运行cmd&#34;&gt;#&lt;/a&gt; 运行 cmd&lt;/h1&gt;
-&lt;h2 id=&#34;1分别输入下列每输一行敲一个回车注意空格&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1分别输入下列每输一行敲一个回车注意空格&#34;&gt;#&lt;/a&gt; 1.(分别输入，下列每输一行敲一个回车)(注意空格)&lt;/h2&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;根据网上教程配置 Git 和 node.js 的环境变量&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1 id=&#34;运行cmd&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#运行cmd&#34;&gt;#&lt;/a&gt; 运行&lt;span class=&#34;red&#34;&gt; cmd&lt;/span&gt;&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1.(分别输入，下列每输一行敲一个回车)(注意空格)&lt;/p&gt;
 &lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;node &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;v&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npm &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;v&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;git &lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;version&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;得到相对应的版本信息（如图）:&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/Codelinghan/image-hosting@master/imgpath/3.63ri0l0i4400.webp&#34; alt=&#34;3&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;如果都可以成功运行出现版本信息证明安装成功。&lt;/p&gt;
-&lt;h2 id=&#34;2安装hexo&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2安装hexo&#34;&gt;#&lt;/a&gt; 2. 安装 Hexo&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;  (1)必须按照步骤来，因为hexo需要使用node.js的npm;
-  (2)打开cmd命令行(win+r 输入cmd回车)分别执行:
-&lt;/code&gt;&lt;/pre&gt;
-&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npm install hexo&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;cli &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;g&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;3等待自动安装完成后-输入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3等待自动安装完成后-输入&#34;&gt;#&lt;/a&gt; 3. 等待自动安装完成后。输入&lt;/h2&gt;
-&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;v&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;4检查是否安装成功&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4检查是否安装成功&#34;&gt;#&lt;/a&gt; 4. 检查是否安装成功&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;到这一步如果所有都安装成功，并测试无问题，那么本地配置已经搞定，下面开始在 github 上建项目了。&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;2. 安装 Hexo&lt;br /&gt;
+ (1) 必须按照步骤来，因为 hexo 需要使用 node.js 的 npm;&lt;br /&gt;
+(2) 打开 cmd 命令行 (win+r 输入 cmd 回车) 分别执行:&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npm install hexo&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;cli &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;g&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;3. 等待自动安装完成后。输入&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;v&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;4. 检查是否安装成功&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;到这一步如果所有都安装成功，并测试无问题，那么本地配置已经搞定，下面开始在 github 上建项目了。&lt;/p&gt;
+&lt;/div&gt;
 &lt;h1 id=&#34;在github上创建并设置远程库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#在github上创建并设置远程库&#34;&gt;#&lt;/a&gt; 在 github 上创建并设置远程库&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;1. 选择 New repository，&lt;br /&gt;
@@ -139,7 +205,7 @@
 &lt;/blockquote&gt;
 &lt;h1 id=&#34;部署blog到互联网&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#部署blog到互联网&#34;&gt;#&lt;/a&gt; 部署 Blog 到互联网&lt;/h1&gt;
 &lt;blockquote&gt;
-&lt;p&gt;【1】 打开 Blog 文件夹，打开 “_config.yml” 文件&lt;br /&gt;
+&lt;p&gt;1. 打开 Blog 文件夹，打开 “_config.yml” 文件&lt;br /&gt;
 修改最后的 deploy 为&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;  deploy:
        type: git
@@ -150,24 +216,51 @@
          repo: https://github.com/Codelinghan/Codelinghan.github.io.git
               （https://github.com/Codelinghan/Codelinghan.github.io.git 这个链接是Github的仓库地址）
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;【2】在创建的 blog 的目录下，安装部署工具（方便以后更新）&lt;br /&gt;
+&lt;p&gt;2. 在创建的 blog 的目录下，安装部署工具（方便以后更新）&lt;br /&gt;
 即：在创建的 blog 的目录下，运行【Git Bash Here】, 执行下列命令：&lt;/p&gt;
 &lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;span&gt;{.line-numbers}      &lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npm install hexo&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;deployer&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;git &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;save&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;           &lt;span class=&#34;token comment&#34;&gt;// 自动部署发布工具&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/blockquote&gt;
 &lt;h1 id=&#34;在创建的blog的目录下&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#在创建的blog的目录下&#34;&gt;#&lt;/a&gt; 在创建的 blog 的目录下&lt;/h1&gt;
 &lt;p&gt;运行【Git Bash Here】, 执行下列命令：&lt;/p&gt;
 &lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;span&gt;{.line-numbers} &lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo c   &lt;span class=&#34;token comment&#34;&gt;// 清理一下         &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo g   &lt;span class=&#34;token comment&#34;&gt;// 指生成               &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo d   &lt;span class=&#34;token comment&#34;&gt;// 部署到远程 Github 仓库&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;出现的问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#出现的问题&#34;&gt;#&lt;/a&gt; 出现的问题&lt;/h1&gt;
-&lt;h2 id=&#34;出现maybe-you-can-find-the-solution-herehttphexoiodocstroubleshootinghtml报错&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#出现maybe-you-can-find-the-solution-herehttphexoiodocstroubleshootinghtml报错&#34;&gt;#&lt;/a&gt; 出现 Maybe you can find the solution here:&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2hleG8uaW8vZG9jcy90cm91Ymxlc2hvb3RpbmcuaHRtbCVFNiU4QSVBNSVFOSU5NCU5OSVFRiVCQyU5QQ==&#34;&gt;http://hexo.io/docs/troubleshooting.html 报错：&lt;/span&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;出现 Maybe you can find the solution here:&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2hleG8uaW8vZG9jcy90cm91Ymxlc2hvb3RpbmcuaHRtbCVFNiU4QSVBNSVFOSU5NCU5OSVFRiVCQyU5QQ==&#34;&gt;http://hexo.io/docs/troubleshooting.html 报错：&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;主要问题是找不到 git 分支，然后我查看当前文件夹没有.git 文件夹，使用 git init 生成 git 文件夹。&lt;br /&gt;
 然后使用 hexo deploy（即：hexo d）上传即可&lt;/p&gt;
 &lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo d&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/blockquote&gt;
-&lt;h2 id=&#34;git报错解决openssl-ssl_read-connection-was-reset-errno-10054&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git报错解决openssl-ssl_read-connection-was-reset-errno-10054&#34;&gt;#&lt;/a&gt; Git 报错解决：OpenSSL SSL_read: Connection was reset, errno 10054&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Git 报错解决：OpenSSL SSL_read: Connection was reset, errno 10054&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
 &lt;p&gt;错误解决：&lt;br /&gt;
 (1) 首先，造成这个错误很有可能是网络不稳定，连接超时导致的，&lt;br /&gt;
 (2) 如果再次尝试后依然报错，可以执行下面的命令:&lt;br /&gt;
  打开 Git 命令页面，执行 git 命令脚本：修改设置，解除 ssl 验证&lt;/p&gt;
 &lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;git config &lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;global http&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;sslVerify &lt;span class=&#34;token string&#34;&gt;&#34;false&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/Codelinghan/image-hosting@master/imgpath/7.4v49t67vv6s0.jpg&#34; alt=&#34;7&#34; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://codelinghan.github.io/2022/Hexo/02.%E9%85%8D%E7%BD%AEshoka%E4%B8%BB%E9%A2%98/</guid>
+            <title>配置shoka主题</title>
+            <link>https://codelinghan.github.io/2022/Hexo/02.%E9%85%8D%E7%BD%AEshoka%E4%B8%BB%E9%A2%98/</link>
+            <category term="Hexo" scheme="https://codelinghan.github.io/categories/Hexo/" />
+            <category term="Hexo" scheme="https://codelinghan.github.io/tags/Hexo/" />
+            <pubDate>Tue, 25 Jan 2022 22:11:57 +0800</pubDate>
+            <description><![CDATA[ &lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;shoka 主题配置 👉 &lt;span&gt;shoka 主题&lt;/span&gt; [&lt;span class=&#34;blue&#34;&gt;shoka 主题&lt;/span&gt;](&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9jb25maWcv&#34;&gt;https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/config/&lt;/span&gt;)&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1 id=&#34;添加valine评论功能&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#添加valine评论功能&#34;&gt;#&lt;/a&gt; 添加 Valine 评论功能&lt;/h1&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://codelinghan.github.io/2022/Hexo/03.shoka%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/</guid>
+            <title>shoka主题优化</title>
+            <link>https://codelinghan.github.io/2022/Hexo/03.shoka%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/</link>
+            <category term="Hexo" scheme="https://codelinghan.github.io/categories/Hexo/" />
+            <pubDate>Tue, 25 Jan 2022 22:11:57 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://codelinghan.github.io/2022/computer-science/operating-system/%E7%AC%AC%E4%B8%80%E7%AB%A0/</guid>
@@ -279,61 +372,6 @@
 &lt;p&gt;在该文件最顶部（即：第一行）添加如下代码：&lt;/p&gt;
 &lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;token directive keyword&#34;&gt;define&lt;/span&gt; &lt;span class=&#34;token macro-name&#34;&gt;_CRT_SECURE_NO_WARNINGS&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;例如：&lt;/p&gt;
 &lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;token directive keyword&#34;&gt;define&lt;/span&gt; &lt;span class=&#34;token macro-name&#34;&gt;_CRT_SECURE_NO_WARNINGS&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;token directive keyword&#34;&gt;pragma&lt;/span&gt; &lt;span class=&#34;token expression&#34;&gt;&lt;span class=&#34;token function&#34;&gt;warning&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;disable&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;6031&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;token directive keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&amp;lt;stdio.h&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; a &lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token function&#34;&gt;scanf&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;%d&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt;a&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token function&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;a=%d\n&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;a&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/blockquote&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://codelinghan.github.io/2022/Hexo/03.Hexo%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/</guid>
-            <title>Hexo报错问题</title>
-            <link>https://codelinghan.github.io/2022/Hexo/03.Hexo%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/</link>
-            <category term="Hexo" scheme="https://codelinghan.github.io/categories/Hexo/" />
-            <category term="Hexo" scheme="https://codelinghan.github.io/tags/Hexo/" />
-            <pubDate>Tue, 11 Jan 2022 20:34:19 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;一-highlightjs9版本已停用升级成最新版本&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-highlightjs9版本已停用升级成最新版本&#34;&gt;#&lt;/a&gt; 一、highlight.js@9 版本已停用，升级成最新版本&lt;/h1&gt;
-&lt;h2 id=&#34;1点进blog文件夹右键git-bush-here执行以下命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1点进blog文件夹右键git-bush-here执行以下命令&#34;&gt;#&lt;/a&gt; 1. 点进 Blog 文件夹，右键【Git Bush Here】，执行以下命令：&lt;/h2&gt;
-&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npm ls highlight&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;js&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;查看 highlight.js 的位置。&lt;/p&gt;
-&lt;p&gt;即：&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/Codelinghan/image-hosting@master/imgpath/8.43hvucp4ecs0.jpg&#34; alt=&#34;8&#34; /&gt;&lt;/p&gt;
-&lt;h2 id=&#34;2进入带有highlightjs的位置文件夹右键git-bush-here执行以下命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2进入带有highlightjs的位置文件夹右键git-bush-here执行以下命令&#34;&gt;#&lt;/a&gt; 2. 进入带有 highlight.js 的位置文件夹，右键【Git Bush Here】，执行以下命令：&lt;/h2&gt;
-&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npm uninstall highlight&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;js&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;再执行：&lt;/p&gt;
-&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npm install highlight&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;js &lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;save&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;检验，执行以下命令：&lt;/p&gt;
-&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npm ls highlight&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;js&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;即：&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/Codelinghan/image-hosting@master/imgpath/9.29a63m16yzvo.jpg&#34; alt=&#34;9&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;命令执行如图所示就代表成功升级。&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://codelinghan.github.io/2022/Hexo/04.ssh%20key%20%E8%AE%BE%E7%BD%AE/</guid>
-            <title>ssh key 设置</title>
-            <link>https://codelinghan.github.io/2022/Hexo/04.ssh%20key%20%E8%AE%BE%E7%BD%AE/</link>
-            <category term="Hexo" scheme="https://codelinghan.github.io/categories/Hexo/" />
-            <category term=".ssh key" scheme="https://codelinghan.github.io/tags/ssh-key/" />
-            <pubDate>Sat, 01 Jan 2022 16:50:02 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;在 gitee、github、本地 gitlab 上同时添加 ssh key&lt;/p&gt;
-&lt;h1 id=&#34;一-打开-ssh文件夹&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-打开-ssh文件夹&#34;&gt;#&lt;/a&gt; 一、打开 .ssh 文件夹&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;C:\Users\Administrator.ssh&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&#34;二-打开git-bash-here&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#二-打开git-bash-here&#34;&gt;#&lt;/a&gt; 二、打开【git bash here】&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;在.ssh 文件夹右键打开【git bash here】&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&#34;三-通过执行以下命令依次生成ssh-key&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#三-通过执行以下命令依次生成ssh-key&#34;&gt;#&lt;/a&gt; 三、通过执行以下命令，依次生成 ssh key&lt;/h1&gt;
-&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ ssh&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;keygen &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;t rsa &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;C &lt;span class=&#34;token string&#34;&gt;&#34;xxx@qq.com&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;f &lt;span class=&#34;token string&#34;&gt;&#34;gitee_id_rsa&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ ssh&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;keygen &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;t rsa &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;C &lt;span class=&#34;token string&#34;&gt;&#34;xxx@qq.com&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;f &lt;span class=&#34;token string&#34;&gt;&#34;github_id_rsa&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ ssh&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;keygen &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;t rsa &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;C &lt;span class=&#34;token string&#34;&gt;&#34;xxx@qq.com&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;f &lt;span class=&#34;token string&#34;&gt;&#34;gitlab_id_rsa&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;完成后，.ssh 文件夹中显示如下图:&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/Codelinghan/image-hosting@master/imgpath/1.6hvrs1lf63w0.webp&#34; alt=&#34;1&#34; /&gt;&lt;/p&gt;
-&lt;h1 id=&#34;四-在gitee-github-本地gitlab上配置ssh-key&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#四-在gitee-github-本地gitlab上配置ssh-key&#34;&gt;#&lt;/a&gt; 四、在 gitee、github、本地 gitlab 上配置 ssh key&lt;/h1&gt;
-&lt;p&gt;生成后查看 ssh 公钥，即执行下列命令：&lt;/p&gt;
-&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ cat &lt;span class=&#34;token operator&#34;&gt;~&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;ssh&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;gitee_id_rsa&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;pub&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;将其内容复制到 gitee 的 ssh key 中保存。&lt;/p&gt;
-&lt;p&gt;同理，GitHub，gitlab 也是相同操作。&lt;/p&gt;
-&lt;h1 id=&#34;五-创建config文件解决ssh冲突&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#五-创建config文件解决ssh冲突&#34;&gt;#&lt;/a&gt; 五、创建 config 文件解决 ssh 冲突&lt;/h1&gt;
-&lt;h2 id=&#34;1执行命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1执行命令&#34;&gt;#&lt;/a&gt; 1. 执行命令：&lt;/h2&gt;
-&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ vi config&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;2输入字母i进入编辑模式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2输入字母i进入编辑模式&#34;&gt;#&lt;/a&gt; 2. 输入字母 i，进入编辑模式；&lt;/h2&gt;
-&lt;h2 id=&#34;3再点击esc输入-wq再按回车&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3再点击esc输入-wq再按回车&#34;&gt;#&lt;/a&gt; 3. 再点击 esc, 输入 “： wq”，再按回车；&lt;/h2&gt;
-&lt;h2 id=&#34;4找到config文件并打开将以下内容复制到config文件中再保存&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4找到config文件并打开将以下内容复制到config文件中再保存&#34;&gt;#&lt;/a&gt; 4. 找到 config 文件，并打开，将以下内容复制到 config 文件中，再保存。&lt;/h2&gt;
-&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;token directive keyword&#34;&gt;gitee&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Host gitee&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;HostName gitee&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;PreferredAuthentications publickey&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;IdentityFile &lt;span class=&#34;token operator&#34;&gt;~&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;ssh&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;gitee_id_rsa&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;token directive keyword&#34;&gt;github&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Host github&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;HostName github&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;PreferredAuthentications publickey&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;IdentityFile &lt;span class=&#34;token operator&#34;&gt;~&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;ssh&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;github_id_rsa&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;token directive keyword&#34;&gt;gitlab&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;host gitlab&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hostname git@&lt;span class=&#34;token number&#34;&gt;192.168&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1.111&lt;/span&gt;  # 添加自己公司的私有ip即可&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;PreferredAuthentications publickey&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;IdentityFile &lt;span class=&#34;token operator&#34;&gt;~&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;ssh&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;gitlab_id_rsa&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;六-测试是否连接成功&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#六-测试是否连接成功&#34;&gt;#&lt;/a&gt; 六、测试是否连接成功&lt;/h1&gt;
-&lt;p&gt;分别执行以下命令：&lt;/p&gt;
-&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ ssh &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;T git@gitee&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ ssh &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;T git@github&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;测试 gitlab 命令：&lt;/p&gt;
-&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ ssh &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;T git@&lt;span class=&#34;token number&#34;&gt;192.168&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1.111&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;输出以下内容就表示连接成功：&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/Codelinghan/image-hosting@master/imgpath/2.59rjp8lrpy00.jpg&#34; alt=&#34;2&#34; /&gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>
