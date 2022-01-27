@@ -135,16 +135,13 @@
         </item>
         <item>
             <guid isPermalink="true">https://codelinghan.github.io/2022/Hexo/01.%E6%90%AD%E5%BB%BA%20Hexo/</guid>
-            <title>Hexo+shoka+GitHub搭建</title>
+            <title>01.Hexo+shoka+GitHub搭建</title>
             <link>https://codelinghan.github.io/2022/Hexo/01.%E6%90%AD%E5%BB%BA%20Hexo/</link>
             <category term="Hexo" scheme="https://codelinghan.github.io/categories/Hexo/" />
             <category term="Hexo" scheme="https://codelinghan.github.io/tags/Hexo/" />
             <pubDate>Tue, 25 Jan 2022 22:11:57 +0800</pubDate>
             <description><![CDATA[ &lt;div class=&#34;note primary&#34;&gt;
-&lt;p&gt;🍒&lt;span&gt;搭建 Hexo&lt;/span&gt;[&lt;span class=&#34;purple&#34;&gt;搭建 Hexo&lt;/span&gt;](&lt;a href=&#34;https://codelinghan.github.io/2022/Hexo/01.%E6%90%AD%E5%BB%BAHexo/&#34;&gt;https://codelinghan.github.io/2022/Hexo/01. 搭建 Hexo/&lt;/a&gt;)-&lt;br /&gt;
-🍑&lt;span&gt;配置 shoka 主题&lt;/span&gt; [&lt;span class=&#34;purple&#34;&gt;配置 shoka 主题&lt;/span&gt;]()-&lt;br /&gt;
-🍌&lt;span&gt;shoka 主题优化&lt;/span&gt; [&lt;span class=&#34;purple&#34;&gt;shoka 主题优化&lt;/span&gt;]()-&lt;br /&gt;
-🍇&lt;/p&gt;
+&lt;p&gt;🍒&lt;span&gt;搭建 Hexo&lt;/span&gt;[&lt;span class=&#34;purple&#34;&gt;搭建 Hexo&lt;/span&gt;]&lt;a href=&#34;https://codelinghan.github.io/2022/Hexo/01.%E6%90%AD%E5%BB%BAHexo/&#34;&gt;1&lt;/a&gt;-🍑&lt;span&gt;配置 shoka 主题&lt;/span&gt; [&lt;span class=&#34;purple&#34;&gt;配置 shoka 主题&lt;/span&gt;]&lt;a href=&#34;https://codelinghan.github.io/2022/Hexo/02.%E9%85%8D%E7%BD%AEshoka%E4%B8%BB%E9%A2%98/&#34;&gt;2&lt;/a&gt;-🍌&lt;span&gt;shoka 主题优化&lt;/span&gt; [&lt;span class=&#34;purple&#34;&gt;shoka 主题优化&lt;/span&gt;]&lt;a href=&#34;https://codelinghan.github.io/2022/Hexo/03.shoka%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/&#34;&gt;3&lt;/a&gt;-🍇&lt;/p&gt;
 &lt;/div&gt;
 &lt;h1 id=&#34;下载git官网下载&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#下载git官网下载&#34;&gt;#&lt;/a&gt; 下载 Git: 官网下载&lt;/h1&gt;
 &lt;ul&gt;
@@ -243,20 +240,21 @@
         </item>
         <item>
             <guid isPermalink="true">https://codelinghan.github.io/2022/Hexo/02.%E9%85%8D%E7%BD%AEshoka%E4%B8%BB%E9%A2%98/</guid>
-            <title>配置shoka主题</title>
+            <title>02.配置shoka主题</title>
             <link>https://codelinghan.github.io/2022/Hexo/02.%E9%85%8D%E7%BD%AEshoka%E4%B8%BB%E9%A2%98/</link>
             <category term="Hexo" scheme="https://codelinghan.github.io/categories/Hexo/" />
             <category term="Hexo" scheme="https://codelinghan.github.io/tags/Hexo/" />
             <pubDate>Tue, 25 Jan 2022 22:11:57 +0800</pubDate>
             <description><![CDATA[ &lt;div class=&#34;note info&#34;&gt;
-&lt;p&gt;shoka 主题配置 👉 &lt;span&gt;shoka 主题&lt;/span&gt; [&lt;span class=&#34;blue&#34;&gt;shoka 主题&lt;/span&gt;](&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9jb25maWcv&#34;&gt;https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/config/&lt;/span&gt;)&lt;/p&gt;
+&lt;p&gt;shoka 主题配置 👉 &lt;span&gt;shoka 主题&lt;/span&gt; [&lt;span class=&#34;blue&#34;&gt;shoka 主题&lt;/span&gt;]&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9jb25maWcv&#34;&gt;1&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;h1 id=&#34;添加valine评论功能&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#添加valine评论功能&#34;&gt;#&lt;/a&gt; 添加 Valine 评论功能&lt;/h1&gt;
+&lt;h1 id=&#34;algolia搜索功能&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#algolia搜索功能&#34;&gt;#&lt;/a&gt; algolia 搜索功能&lt;/h1&gt;
  ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://codelinghan.github.io/2022/Hexo/03.shoka%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/</guid>
-            <title>shoka主题优化</title>
+            <title>03.shoka主题优化</title>
             <link>https://codelinghan.github.io/2022/Hexo/03.shoka%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/</link>
             <category term="Hexo" scheme="https://codelinghan.github.io/categories/Hexo/" />
             <pubDate>Tue, 25 Jan 2022 22:11:57 +0800</pubDate>
