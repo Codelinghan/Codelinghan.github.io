@@ -14,7 +14,8 @@
         <title>Opencv-Study</title>
         <link rel="alternate" href="https://codelinghan.github.io/2022/DeepLearning/opencv/"/>
         <content type="html"></content>
-        <category term="深度学习，opencv" scheme="https://codelinghan.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%8Copencv/" />
+        <category term="深度学习" scheme="https://codelinghan.github.io/categories/DeepLearning/" />
+        <category term="opencv" scheme="https://codelinghan.github.io/categories/DeepLearning/opencv/" />
         <updated>2022-03-25T05:52:37.126Z</updated>
     </entry>
     <entry>
