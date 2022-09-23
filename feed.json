@@ -7,6 +7,17 @@
     "home_page_url": "https://codelinghan.github.io",
     "items": [
         {
+            "id": "https://codelinghan.github.io/2022/notes/03.%E8%A7%A3%E5%86%B3Anaconda-Navigator%E9%97%AA%E9%80%80%20/",
+            "url": "https://codelinghan.github.io/2022/notes/03.%E8%A7%A3%E5%86%B3Anaconda-Navigator%E9%97%AA%E9%80%80%20/",
+            "title": "解决Anaconda Navigator闪退，且打不开的问题",
+            "date_published": "2022-09-23T13:42:51.010Z",
+            "content_html": "<h1 id=\"出现的问题描述\"><a class=\"anchor\" href=\"#出现的问题描述\">#</a> 出现的问题描述</h1>\n<p>在开始菜单，双击 Anaconda Navigator 之后，启动窗口一直闪退，无法打开。</p>\n<h1 id=\"解决的方法\"><a class=\"anchor\" href=\"#解决的方法\">#</a> 解决的方法</h1>\n<p>在开始菜单中，右击 Anaconda Prompt，以管理员身份运行；</p>\n<figure class=\"highlight cpp\"><figcaption data-lang=\"C++\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre><span class=\"token comment\">//1、首先，升级 conda</span></pre></td></tr><tr><td data-num=\"2\"></td><td><pre> conda update conda</pre></td></tr><tr><td data-num=\"3\"></td><td><pre> <span class=\"token comment\">//2、升级 anaconda-navigator</span></pre></td></tr><tr><td data-num=\"4\"></td><td><pre> conda update anaconda<span class=\"token operator\">-</span>navigator</pre></td></tr><tr><td data-num=\"5\"></td><td><pre> <span class=\"token comment\">//3、重置 navigator</span></pre></td></tr><tr><td data-num=\"6\"></td><td><pre> anaconda<span class=\"token operator\">-</span>navigator <span class=\"token operator\">--</span>reset</pre></td></tr><tr><td data-num=\"7\"></td><td><pre> <span class=\"token comment\">//4、升级客户端</span></pre></td></tr><tr><td data-num=\"8\"></td><td><pre> conda update anaconda<span class=\"token operator\">-</span>client</pre></td></tr><tr><td data-num=\"9\"></td><td><pre> <span class=\"token comment\">//5. 升级安装依赖包</span></pre></td></tr><tr><td data-num=\"10\"></td><td><pre> conda update <span class=\"token operator\">-</span>f anaconda<span class=\"token operator\">-</span>client</pre></td></tr></table></figure><h1 id=\"参考博客\"><a class=\"anchor\" href=\"#参考博客\">#</a> 参考博客</h1>\n<p><span class=\"exturl\" data-url=\"aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0Jlcl9CYWkvYXJ0aWNsZS9kZXRhaWxzLzEyMzI2MjA1MQ==\">https://blog.csdn.net/Ber_Bai/article/details/123262051</span></p>\n",
+            "tags": [
+                "笔记",
+                "anaconda出错"
+            ]
+        },
+        {
             "id": "https://codelinghan.github.io/2022/DeepLearning/opencv/",
             "url": "https://codelinghan.github.io/2022/DeepLearning/opencv/",
             "title": "Opencv-Study",
